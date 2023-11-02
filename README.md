@@ -5,9 +5,13 @@ A Comprehensive Smart Air Pollution Monitoring System and Smog Prediction Model 
 This project serves as a culmination of the efforts of the following students, in partial fulfillment of the requirements for the Degree of Bachelor of Science in Computer Engineering:
 
 **CASTRO, Jhun Cidrek V.**
+
 **CERVANTES, Michael Gabriel F.**
+
 **LAPID, Henderson Eiann C.**
+
 **MARTINO, Danielle Loi Y.**
+
 **SUMANG, John Angelo C.**
 
 ## Overview
