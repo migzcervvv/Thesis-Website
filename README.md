@@ -1,7 +1,7 @@
-**Project Title: Enhancing Air Quality in Urban Environments
-**
-**A Comprehensive Smart Air Pollution Monitoring System and Smog Prediction Model for Metro Manila
-**
+Project Title: Enhancing Air Quality in Urban Environments
+
+A Comprehensive Smart Air Pollution Monitoring System and Smog Prediction Model for Metro Manila
+
 This project serves as a culmination of the efforts of the following students, in partial fulfillment of the requirements for the Degree of Bachelor of Science in Computer Engineering:
 
 CASTRO, Jhun Cidrek V.
