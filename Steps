@@ -6,14 +6,17 @@ Frontend:
 HTML: Structure your website with sections like 'Current Air Quality', 'Smog Prediction', 'About', etc.
 CSS: Style your website. You can use frameworks like Bootstrap for faster and responsive designs.
 JavaScript: Fetch data from the backend and update the UI.
+
 Backend:
 
 Flask: A lightweight Python web framework.
 SQLite: A lightweight database to store air quality data.
+
 2. AI for Smog Prediction and Pollution Monitoring:
 Data Gathering: You can use public air quality datasets or, if you build a sensor, record data over a period.
 Model Development: Use Python with libraries like Scikit-learn or TensorFlow to develop a prediction model. For simplicity, start with a linear regression model.
 Integration with Flask: Load your trained model in the Flask app and create an endpoint that the frontend can call to get predictions.
+
 3. Hardware for Air Pollution Monitoring:
 For a simple version:
 
@@ -23,32 +26,38 @@ Steps:
 Connect the sensor to the microcontroller.
 Write a script to read data from the sensor.
 Send this data to your Flask backend. For Raspberry Pi, you can use Python directly. For Arduino, you might use serial communication.
+
 Implementation:
 1. Website Development:
 
 Setup Flask: Install Flask using pip (pip install Flask).
 Create a basic route in Flask to test if it's working.
 Design your website's frontend. Integrate JavaScript to fetch data from Flask.
+
 2. AI Model:
 
 Preprocess the dataset: Clean and normalize the data.
 Train a model on historical data.
 Save the model using libraries like joblib for Scikit-learn.
 In Flask, load this model and create an endpoint that returns predictions.
+
 3. Hardware:
 
 Connect your sensor to the microcontroller following the sensor's datasheet.
 Write a script to read data. For Arduino, use the Arduino IDE. For Raspberry Pi, use Python.
 Send this data to your Flask app either over a direct connection or using Wi-Fi.
+
 4. Data Flow:
 
 Your microcontroller reads data from the sensor and sends it to the Flask backend.
 This data is stored in the SQLite database.
 The frontend fetches current data and predictions from the Flask backend and displays it on the website.
+
 5. Deployment (optional): If you want to make your website public:
 
 Use platforms like Heroku or PythonAnywhere to deploy your Flask app.
 Use domain providers to get a custom domain.
+
 Tips:
 Modularity: Break your project into modules and tackle each separately. First, get the hardware working, then the backend, then the frontend, and finally integrate everything.
 Simplicity: Since it's a school project, don't aim for perfection. Aim for a working prototype.
