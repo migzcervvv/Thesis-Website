@@ -1,4 +1,4 @@
-## Project Title: Enhancing Air Quality in Urban Environments
+## Project Title: Enhancing Air Quality in Urban Environments: A Comprehensive Smart Air Pollution Monitoring System and Smog Prediction Model in Areas of Manila
 
 A Comprehensive Smart Air Pollution Monitoring System and Smog Prediction Model for Metro Manila
 
