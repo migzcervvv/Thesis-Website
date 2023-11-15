@@ -1,13 +1,14 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("JavaScript is running!");
+
     // Define the API endpoints with full URLs
     const airQualityEndpoint = 'http://localhost:5000/api/current-air-quality';
-    const smogPredictionEndpoint = 'http://localhost:5000/api/smog-prediction';    
+    const smogPredictionEndpoint = 'http://localhost:5000/api/smog-prediction';
 
     // Fetch and display air quality data
     fetch(airQualityEndpoint)
         .then(response => {
-            console.log('Response Status (Air Quality):', response.status); // Log the response status
+            console.log('Response Status (Air Quality):', response.status);
             return response.json();
         })
         .then(data => {
@@ -22,14 +23,27 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 
     // Fetch and display smog prediction
-    fetch(smogPredictionEndpoint)
+    fetch(smogPredictionEndpoint, {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json',
+        },
+        // Adjust the payload based on the expected format in your Flask app
+        body: JSON.stringify({
+            temperature: 22.5,
+            humidity: 65,
+            pm25: 15,
+            co2: 400,
+            humidityTempIndex: 22.5 * 65  // Adjust the value based on your calculation
+        }),
+    })
         .then(response => {
-            console.log('Response Status (Smog Prediction):', response.status); // Log the response status
+            console.log('Response Status (Smog Prediction):', response.status);
             return response.json();
         })
         .then(data => {
             // Assuming you have elements with these IDs to display data
-            document.getElementById('smog_prediction').textContent = data.smog_prediction;
+            document.getElementById('smog_prediction').textContent = data.numeric_prediction;  // Assuming numeric prediction
             document.getElementById('recommendation').textContent = data.recommendation;
         })
         .catch(error => {
