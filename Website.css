@@ -568,3 +568,30 @@ button {
 }
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
+
+.progress-bar-container {
+  width: 100%;
+  background-color: white; /* White background */
+  border: 2px solid   #4f9b07; /* Light border for visibility */
+  border-radius: 5px;
+  overflow: hidden; /* Ensures the inner bar stays within the rounded corners */
+}
+
+.progress-bar {
+  height: 20px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 20px; /* Same as height */
+  color: white;
+}
+
+#smogRecommendation {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333; /* Or any color that matches your design */
+}
+
+#smogProgressBar.low { background-color: green; }
+#smogProgressBar.moderate { background-color: yellow; color: black; }
+#smogProgressBar.high { background-color: orange; }
+#smogProgressBar.very-high { background-color: red; }
