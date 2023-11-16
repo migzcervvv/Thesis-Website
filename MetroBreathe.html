@@ -4,6 +4,7 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="Website.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
 </head>
 
 <body>
@@ -24,51 +25,39 @@
 
     <div class="hero-heading-right">
         <div class="hero-background"></div>
-        <div class="container">
-            <div class="column a">
-                <h1 class="heading">Breathing Life into Metro Manila's Air Quality</h1>
+        <div class="hero-heading-container">
+            <div class="hero-heading-column a">
+                <h1 class="hero-heading">Breathing Life into Metro Manila's Air Quality</h1>
             </div>
-            <div class="column b">
-                <p class="content">Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions.</p>
+            <div class="hero-heading-column b">
+                <p class="hero-heading-content">Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions.</p>
             </div>
         </div>
     </div>
 
     <main class="hero-container">
-        <div class="column">
-            <div class="hero-content">
+        <div class="hero-container-column">
+            <div class="hero-container-content">
                 <h1>Understanding The Urgency</h1>
-                <p>In 2022, the Philippines ranked 69th among the world's most polluted regions, with PM2.5 levels three times higher than WHO safety standards. While there was a temporary improvement during the 2020 lockdowns, pollution rebounded as restrictions eased, reaching 14.9 μg/m³.</p>
-                <div class="actions">
+                <p>In 2022, the Philippines ranked 69th among the world's most polluted regions, with PM2.5 levels three times higher than WHO safety standards. 
+                    While there was a temporary improvement during the 2020 lockdowns, pollution rebounded as restrictions eased, reaching 14.9 μg/m³.
+                </p>
+                <p>
+                    To overcome this problem, a comprehensive smart air pollution monitoring system and smog prediction model 
+                    is proposed for enhancing air quality in areas of Manila specifically in Quiapo, España Boulevard, and Intramuros. 
+                </p>
+                <div class="hero-container-actions">
                     <a href="#Prediction">
                         <button>SEE SMOG PREDICTIONS!</button>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="column">
-            <div class="image-wrapper">
-                <div class="image"></div>
-            </div>
+        <div class="hero-container-column">
+            <div class="hero-container-image"></div>
         </div>
     </main>
-    <section class="team-circles-container">        
-        <div class="column">
-            <!-- Air Quality Data -->
-            <h2>Air Quality Data</h2>
-            <div class="air-quality-data">
-                <p>Temperature: <span id="temperature"></span></p>
-                <p>Humidity: <span id="humidity"></span></p>
-                <p>PM2.5: <span id="pm25"></span></p>
-                <p>CO2: <span id="co2"></span></p>
-            </div>
-
-            <!-- Smog Prediction -->
-            <h2>Smog Prediction</h2>
-            <div class="smog-prediction-data">
-                <p>Smog Prediction: <span id="smog_prediction"></span> and <span id="recommendation"></span></p>
-            </div>
-        </div>
+    
     </section>
     <!-- Team Circles Section -->
     <section class="team-circles-container">
@@ -98,7 +87,7 @@
                 </div>
                 <div class="team-circle-content">
                     <div class="team-circle-info">
-                        <p class="team-member-name">Michael Gabriel Cervantes</p>
+                        <p class="team-member-name">Miggz Cervantes</p>
                         <p class="team-member-role">Lead Programmer</p>
                     </div>
                 </div>
@@ -148,42 +137,42 @@
     <div class="footer">
         
       <!-- Main Content Wrapper -->
-      <div class="main-content-wrapper">
+      <div class="footermain-content-wrapper">
           
           <!-- Logo Wrapper -->
-          <div class="logo-wrapper">
-              <div class="logo">
+          <div class="footerlogo-wrapper">
+              <div class="footerlogo">
               </div>
           </div>
 
           <!-- Columns -->
-          <div class="columns">
+          <div class="footercolumns">
 
               <!-- Single Column -->
-              <div class="column">
-                  <h2 class="team">Team</h2>
+              <div class="footercolumn">
+                  <h2>Team</h2>
                   <div class="footer-links">
-                      <a href="#" class="about">About</a>
+                      <a href="#" class="footerabout">About</a>
                   </div>
               </div>
 
               <!-- Single Column -->
-              <div class="column">
-                  <h2 class="predictions">Predictions</h2>
+              <div class="footercolumn">
+                  <h2>Predictions</h2>
                   <div class="footer-links">
-                      <a href="#" class="area1">Intramuros</a>
-                      <a href="#" class="area2">Quiapo</a>
-                      <a href="#" class="area3">Espana Boulevard</a>
+                      <a href="#" class="footerarea">Intramuros</a>
+                      <a href="#" class="footerarea">Quiapo</a>
+                      <a href="#" class="footerarea">España</a>
                   </div>
               </div>
 
               <!-- Single Column -->
-              <div class="column">
-                  <h2 class="monitoring">MONITORING</h2>
+              <div class="footercolumn">
+                  <h2>Monitoring</h2>
                   <div class="footer-links">
-                      <a href="#" class="area-1">Intramuros</a>
-                      <a href="#" class="area-2">Quiapo</a>
-                      <a href="#" class="area-3">Espana Boulevard</a>
+                      <a href="#" class="footerarea">Intramuros</a>
+                      <a href="#" class="footerarea">Quiapo</a>
+                      <a href="#" class="footerarea">España</a>
                   </div>
               </div>
 
@@ -195,3 +184,22 @@
 </body>
 
 </html>
+<!-- 
+<section class="team-circles-container">        
+    <div class="column">
+        Air Quality Data 
+        <h2>Air Quality Data</h2>
+        <div class="air-quality-data">
+            <p>Temperature: <span id="temperature"></span></p>
+            <p>Humidity: <span id="humidity"></span></p>
+            <p>PM2.5: <span id="pm25"></span></p>
+            <p>CO2: <span id="co2"></span></p>
+        </div>
+
+        Smog Prediction 
+        <h2>Smog Prediction</h2>
+        <div class="smog-prediction-data">
+            <p>Smog Prediction: <span id="smog_prediction"></span> and <span id="recommendation"></span></p>
+        </div>
+    </div>
+-->

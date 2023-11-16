@@ -1,57 +1,80 @@
-  body, h1, p{
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-  }
+body, h1, p, h2 {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  width: 100%; /* Full width */
+  font-style: normal;
+  color: #000000;
+  content: justify;
+}
+  
+/* H1 */
+h1 {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 120%;
+}
 
-  .navbar {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px 24px;
-      position: relative;
-      width: 1440px;
-      height: 69px;
-      background: #4CAF50;
-      border-radius: 0px;
-    }
+/* Paragraph */
+p {
+  width: 100%; /* Full width */
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: #212121;
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 24px;
+  width: 100%; /* Responsive width */
+  height: 69px;
+  background: #4CAF50;
+  border-radius: 0px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  width: 100%; /* Responsive width */
+  max-width: 1200px; /* Max width constraint */
+  height: 69px;
+  border-radius: 0px;
+  margin: 0 auto; /* Centering */
+}
+
+.navbar-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 625px;
+  width: 100%; /* Responsive width */
+  max-width: 1200px; /* Max width constraint */
+  height: 69px;
+  border-radius: 0px;
+}
+
+.navbar-logo {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  margin: 0 auto;
+  width: 261px; /* Fixed width, consider making this responsive if needed */
+  height: 52px;
+  border-radius: 0px;
+}
     
-    .navbar-container {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
-      padding: 0px;
-      width: 1200px;
-      height: 69px;
-      border-radius: 0px;
-    }
-    
-    .navbar-content {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-between;
-      align-items: center;
-      padding: 0px;
-      gap: 625px;
-      width: 1200px;
-      height: 69px;
-      border-radius: 0px;
-    }
-    
-    .navbar-logo {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 0px;
-      margin: 0 auto;
-      width: 261px;
-      height: 52px;
-      border-radius: 0px;
-    }
-    
-    .navbar-logo h1 {
+.navbar-logo h1 {
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 700;
@@ -60,24 +83,24 @@
       color: #FFFFFF;
     }
     
-    .navbar-menu {
+.navbar-menu {
       display: flex;
       flex-direction: row;
       align-items: center;
       padding: 0px;
       gap: 32px;
       margin: 0 auto;
-      width: 314px; 
+      width: 100%; /* Full width */ 
       height: 69px;
       border-radius: 0px;
     }
     
-    .navbar-menu a {
+.navbar-menu a {
       text-decoration: none;
       color: white;
     }
 
-    .navbar-link {
+.navbar-link {
       display: flex;
       flex-direction: row;
       align-items: flex-start;
@@ -85,7 +108,7 @@
       border-radius: 0px;
     }
     
-    .navbar-link a {
+.navbar-link a {
       font-weight: 400;
       font-size: 14px;
       line-height: 150%;
@@ -94,44 +117,37 @@
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
-/* Hero Heading Right */
 .hero-heading-right {
   position: relative;
-  width: 1440px;
-  height: 520.9px;
+  width: 100%; /* Responsive width */
+  min-height: 520px; /* Consider using a responsive unit */
   background: #ffffff;
   border-radius: 0px;
 }
 
-/* moon-app-com-qEdL-YYmQMI-unsplash 1 */
 .hero-background {
   position: absolute;
-  width: 1440px;
-  height: 600px;
-  left: 0px;
-  top: 0px;
+  width: 100%; /* Responsive width */
+  height: 100%; /* Consider using a responsive unit */
   background: url(Pics/background.jpg);
   background-size: cover;
 }
 
-/* Container */
-.container {
+.hero-heading-container {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 80px;
-  
   position: absolute;
-  width: 1200px;
-  height: 382px;
-  left: 109px;
-  top: 169px;
-  
+  width: 100%; /* Responsive width */
+  max-width: 1200px; /* Max width constraint */
+  height: 50%;
+  left: 20%; /* Centering */
+  top: 25%;
   border-radius: 0px;
 }
 
-.column a{
+.hero-heading-column a{
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -143,7 +159,7 @@
 }
 
 /* Breathing Life into Metro Manila's Air Quality */
-.heading {
+.hero-heading {
   width: 582px;
   height: 106px;
   font-family: 'Poppins';
@@ -155,7 +171,7 @@
 }
 
 /* Column */
-.column b{
+.hero-heading-column b{
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -166,20 +182,8 @@
   border-radius: 0px;
 }
 
-/* Breathing Life into Metro Manila's Air Quality */
-.heading {
-  width: 582px;
-  height: 106px;
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
-  color: #ffffff;
-}
-
 /* Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions. */
-.content {
+.hero-heading-content {
   width: 582px;
   height: 106px;
   font-family: 'Poppins';
@@ -193,77 +197,48 @@
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
-
 /* Hero Container */
 .hero-container {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 64px 24px;
-  gap: 80px;
-  position: relative;
-  width: 1440px;
-  height: 520.9px;
+  padding: 5% 10%;
+  width: 100%; /* Full width */
+  min-height: 520px; /* Minimum height to maintain layout but allow expansion */
   background: #FFFFFF;
-  border-radius: 0px;
+  gap: 40px;    
 }
 
 /* Column */
-.column {
+.hero-container-column {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  width: 560px;
-  height: 374px;
-  border-radius: 0px;
+  gap: 48px;
+  width: 50%; /* Full width */
+  max-width: 1200px; /* Max width for column */
 }
 
 /* Content */
-.content {
-  display: flex;
+.hero-container-content {
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   padding: 0px;
-  gap: 24px;
-  width: 560px;
-  height: 293px;
-  border-radius: 0px;
+  gap: 24em;
+  max-width: 560em; /* Max width for content */
 }
 
-/* H1 */
-h1 {
-  width: 560px;
-  height: 134px;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 120%;
-  color: #000000;
-}
-
-/* Paragraph */
-p {
-  width: 560px;
-  height: 135px;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 150%;
-  color: #212121;
-}
 
 /* Actions */
-.actions {
+.hero-container-actions {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 16px 0px 0px;
   gap: 16px;
 }
-.actions a {
+.hero-container-actions a {
   text-decoration: none;
   color: white;
 }
@@ -274,45 +249,26 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 12px 24px;
-  gap: 8px;
-  width: 198px;
-  height: 41px;
+  width: 100%; /* Consider making this responsive */
+  height: auto;
   background: #41B883;
-  border-radius: 0px;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 140%;
+  border-radius: 100%;
+  font-style: bold;
+  font-weight: 700;
   color: #FFFFFF;
 }
 
-/* Image Wrapper */
-.image-wrapper {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 560px;
-  height: 392.9px;
-  border-radius: 0px;
-}
-
-/* Image */
-.image {
+.hero-container-image {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  width: 560px;
-  height: 392.9px;
+  width: 560px; /* Consider making this responsive */
+  height: 392.9px; /* Consider using a responsive unit */
   background: url('Pics/Manila.jpg');
   background-size: cover;
-  border-radius: 0px;
+  border-radius: 25%;
 }
-
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
@@ -323,25 +279,23 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px;
-  gap: 64px;
+  padding: 5% 2%; /* Use percentages for padding */
+  gap: 5%;
   position: relative;
-  width: 1440px;
-  height: 675px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   background: #4CAF50;
 }
 
-/* Container */
 .team-circles-columns {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   padding: 0px;
-  gap: 28px;
-  width: 1200px;
-  height: 547px; /* Adjusted height for better alignment */
-  border-radius: 0px;
+  gap: 2%; /* Use percentages for gap */
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
 }
 
 /* Title Section */
@@ -351,19 +305,19 @@ button {
   align-items: center;
   padding: 0px;
   gap: 16px;
-  width: 530px;
-  height: 102px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   border-radius: 0px;
 }
 
 /* Team section */
 .team-circles-section {
-  width: 530px;
-  height: 38px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 800;
-  font-size: 32px;
+  font-size: 36px;
   line-height: 120%;
   text-align: center;
   color: #D8D8D8;
@@ -371,12 +325,12 @@ button {
 
 /* Description */
 .team-circles-description {
-  width: 530px;
-  height: 48px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 24px;
   line-height: 150%;
   text-align: center;
   color: #D8D8D8;
@@ -389,8 +343,8 @@ button {
   align-items: center;
   padding: 0px;
   gap: 24px;
-  width: 201.6px;
-  height: 351px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   border-radius: 0px;
 }
 
@@ -401,8 +355,8 @@ button {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  width: 270px;
-  height: 270px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   border-radius: 0px;
 }
 
@@ -479,8 +433,8 @@ button {
   align-items: center;
   padding: 0px;
   gap: 16px;
-  width: 201.6px;
-  height: 57px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   border-radius: 0px;
 }
 
@@ -490,16 +444,15 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 0px;
-  width: 201.6px;
-  height: 57px;
+  height: auto; /* Auto height */
   border-radius: 0px;
   gap: 25px;
 }
 
 /* Team Member Name */
 .team-member-name {
-  width: 201.6px;
-  height: 30px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 700;
@@ -511,8 +464,8 @@ button {
 
 /* Team Member Role */
 .team-member-role {
-  width: 201.6px;
-  height: 27px;
+  width: 100%; /* Full width */
+  height: auto; /* Auto height */
   padding-top: 25px;
   font-family: 'Poppins';
   font-style: normal;
@@ -531,69 +484,87 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 64px 24px 8px;
-  width: 1440px;
-  height: 500px;
+  padding: 4.44vw 1.66vw 0.55vw; /* Using viewport width for padding */
+  width: 100%; /* Full width */
+  min-height: auto; /* Height adjusts automatically */
   background: #4CAF50;
 }
 
-.main-content-wrapper {
+/* Main Content Wrapper */
+.footermain-content-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: auto; /* Height adjusts automatically */
+  min-height: 320px;
 }
 
-
 /* Columns */
-.columns {
+.footercolumns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 20px; /* Reduce the gap here */
-  width: 960px;
-  height: 176px;
+  gap: 1.38vw; /* Reduce the gap using viewport width */
+  width: 66.66%; /* Adjusted width */
+  height: auto; /* Height adjusts automatically */
+  min-height: 320px;
 }
 
 /* Column */
-.column {
+.footercolumn {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 12px; /* Reduce the gap here */
-  margin: 0 auto;
-  width: 320px;
-  height: 176px;
+  width: 25.22%; /* Adjusted width */
+  height: auto; /* Height adjusts automatically */
+  min-height: 320px;
+  font-size: 28px;
+}
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 25.22%; /* Adjusted width */
+  height: auto; /* Height adjusts automatically */
+  min-height: 320px;
 }
 
 /* Logo Wrapper */
-.logo-wrapper {
+.footerlogo-wrapper {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 16px 0px 0px;
-  width: 173px;
-  height: 176px;
+  padding: 1.11vw 0 0; /* Adjusted padding */
+  width: 22.01vw; /* Adjusted width */
+  height: auto; /* Height adjusts automatically */
+  min-height: 320px;
 }
-/*text-decoration: none;
-color: white;*/
+
 /* Logo */
-.logo {
+.footerlogo { 
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 0px;
-  width: 173px;
-  height: 160px;
+  width: 273px;
+  height: 260px;
   background: url(Pics/Metro.png);
   background-size: cover;
 }
-/* Style for Links */
-a {
-  text-decoration: none; /* Remove underline */
-  color: white; /* Set text color to white */
+.footercolumn h2 {
+  font-weight: 500;
+  font-size: 46px;
+  line-height: 120%;
+  color: #ffffff; 
 }
+.footerabout, .footerarea
+{
+  text-decoration: none;  /* Remove underline */
+  color: #000000; 
+}
+
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
