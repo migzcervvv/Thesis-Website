@@ -11,7 +11,7 @@ body, h1, p, h2 {
 /* H1 */
 h1 {
   font-weight: 700;
-  font-size: 56px;
+  font-size: 3rem;
   line-height: 120%;
 }
 
@@ -20,7 +20,7 @@ p {
   width: 100%; /* Full width */
   font-style: normal;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.2rem;
   line-height: 150%;
   color: #212121;
 }
@@ -30,9 +30,9 @@ p {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 24px;
   width: 100%; /* Responsive width */
-  height: 69px;
+  max-height: 4vw;
+  min-height: 70px;
   background: #4CAF50;
   border-radius: 0px;
 }
@@ -44,8 +44,8 @@ p {
   align-items: center;
   padding: 0px;
   width: 100%; /* Responsive width */
-  max-width: 1200px; /* Max width constraint */
-  height: 69px;
+  max-width: 1250vw; /* Max width constraint */
+  max-height: 70px;
   border-radius: 0px;
   margin: 0 auto; /* Centering */
 }
@@ -56,7 +56,7 @@ p {
   justify-content: space-between;
   align-items: center;
   padding: 0px;
-  gap: 625px;
+  gap: 40vw;
   width: 100%; /* Responsive width */
   max-width: 1200px; /* Max width constraint */
   height: 69px;
@@ -66,6 +66,7 @@ p {
 .navbar-logo {
   display: flex;
   flex-direction: row;
+  flex: 1; /* Distributes space evenly */
   align-items: flex-start;
   padding: 0px;
   margin: 0 auto;
@@ -74,14 +75,19 @@ p {
   border-radius: 0px;
 }
     
-.navbar-logo h1 {
-      font-family: 'Poppins';
+.navbar-logo h1{
+      font-family: 'Poppins', sans-serif;
       font-style: normal;
       font-weight: 700;
       font-size: 36px;
       line-height: 54px;
       color: #FFFFFF;
     }
+    .navbar-logo a{
+      color: #FFFFFF;
+      text-decoration: none;
+    }
+    
     
 .navbar-menu {
       display: flex;
@@ -120,7 +126,8 @@ p {
 .hero-heading-right {
   position: relative;
   width: 100%; /* Responsive width */
-  min-height: 520px; /* Consider using a responsive unit */
+  height: auto;
+  min-height: 27vw; /* Consider using a responsive unit */
   background: #ffffff;
   border-radius: 0px;
 }
@@ -137,107 +144,100 @@ p {
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 80px;
+  gap: 10vw; /* Use viewport width for gap */
   position: absolute;
-  width: 100%; /* Responsive width */
-  max-width: 1200px; /* Max width constraint */
-  height: 50%;
-  left: 20%; /* Centering */
-  top: 25%;
+  width: 100%;
+  max-width: 1200px;
+  height: auto; /* Adjust height to be auto for flexibility */
+  left: 50%;
+  top: 8vw;
+  transform: translateX(-50%); /* Center horizontally */
   border-radius: 0px;
 }
 
-.hero-heading-column a{
+.hero-heading-column a {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   padding: 0px;
-  gap: 10px;
-  width: 600px;
-  height: 106px;
+  gap: 1vw; /* Responsive gap */
+  width: auto; /* Adjust width to auto */
+  height: auto; /* Adjust height to auto */
   border-radius: 0px;
 }
 
-/* Breathing Life into Metro Manila's Air Quality */
 .hero-heading {
-  width: 582px;
-  height: 106px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2.5rem; /* Responsive font size */
+  line-height: 1.5em;
   color: #FFFFFF;
 }
 
-/* Column */
-.hero-heading-column b{
+.hero-heading-column b {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
-  width: 534px;
-  height: 160px;
+  padding: 0;
+  gap: 1vw; /* Responsive gap */
+  width: auto; /* Adjust width to auto */
+  max-width: 1200px;
+  height: auto; /* Adjust height to auto */
   border-radius: 0px;
 }
 
-/* Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions. */
 .hero-heading-content {
-  width: 582px;
-  height: 106px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 36px;
-  line-height: 54px;
+  font-size: 2rem; /* Responsive font size */
+  line-height: 1.5em;
   color: #ffffff;
 }
 
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
-/* Hero Container */
+/* Understanding the urgency section */
 .hero-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 5% 10%;
-  width: 100%; /* Full width */
-  min-height: 520px; /* Minimum height to maintain layout but allow expansion */
-  background: #FFFFFF;
-  gap: 40px;    
+  align-items: center;
+  padding-top: 4vw;
+  padding-bottom: 4vw;
+  width: 100%;
+  min-height: 40vh;
+  background: #ffffff;
+  gap: 2vw; /* Use viewport width for gap */
 }
 
 /* Column */
 .hero-container-column {
   display: flex;
   flex-direction: column;
+  padding-left: 10vw; /* Adjust for responsive padding */
   align-items: flex-start;
-  gap: 48px;
-  width: 50%; /* Full width */
-  max-width: 1200px; /* Max width for column */
+  gap: 2vw; /* Responsive gap */
+  width: 50%;
 }
 
 /* Content */
 .hero-container-content {
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  gap: 24em;
-  max-width: 560em; /* Max width for content */
+  gap: 1em; /* Adjust gap to a more reasonable unit */
 }
-
 
 /* Actions */
 .hero-container-actions {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  padding: 16px 0px 0px;
-  gap: 16px;
+  padding: 1vw 0; /* Responsive padding */
+  gap: 1vw; /* Responsive gap */
 }
+
 .hero-container-actions a {
   text-decoration: none;
   color: white;
@@ -245,26 +245,40 @@ p {
 
 /* Button */
 button {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%; /* Consider making this responsive */
-  height: auto;
-  background: #41B883;
-  border-radius: 100%;
-  font-style: bold;
-  font-weight: 700;
-  color: #FFFFFF;
+  appearance: button;
+  background-color: #000; /* Black background */
+  border: 1px solid #000; /* Black border */
+  border-radius: 4px; /* Adjusted border-radius */
+  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px; /* Box shadow styling */
+  box-sizing: border-box;
+  color: #fff; /* White text color */
+  cursor: pointer;
+  display: inline-block; /* Use inline-block for button layout */
+  font-family: 'Poppins', sans-serif; /* Font styling */
+  font-size: 14px; /* Font size */
+  font-weight: 400; /* Font weight */
+  line-height: 20px; /* Line height */
+  margin: 0 5px 10px 0; /* Margins */
+  padding: 12px 40px; /* Padding */
+  text-align: center; /* Centered text */
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+
+  /* Add touch-action and text-transform */
+  touch-action: manipulation;
+  text-transform: none;
 }
 
+button:not([disabled]):active {
+  transform: translate(2px, 2px); /* Translate on active */
+}
+
+
 .hero-container-image {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 560px; /* Consider making this responsive */
-  height: 392.9px; /* Consider using a responsive unit */
+  width: 30vw;
+  height: 20vw; /* Maintain aspect ratio */
   background: url('Pics/Manila.jpg');
   background-size: cover;
   border-radius: 25%;
@@ -279,21 +293,19 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 5% 2%; /* Use percentages for padding */
-  gap: 5%;
+  gap: 3vw; /* Adjusted gap */
   position: relative;
+  padding-top: 2vw;
   width: 100%; /* Full width */
   height: auto; /* Auto height */
   background: #4CAF50;
 }
-
 .team-circles-columns {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
-  padding: 0px;
-  gap: 2%; /* Use percentages for gap */
+  gap: 2vw;  
   width: 100%; /* Full width */
   height: auto; /* Auto height */
 }
@@ -314,7 +326,7 @@ button {
 .team-circles-section {
   width: 100%; /* Full width */
   height: auto; /* Auto height */
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 800;
   font-size: 36px;
@@ -327,7 +339,8 @@ button {
 .team-circles-description {
   width: 100%; /* Full width */
   height: auto; /* Auto height */;
-  font-family: 'Poppins';
+  margin: 1vw;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 24px;
@@ -341,8 +354,7 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 0px;
-  gap: 24px;
+  gap: 2vw;
   width: 100%; /* Full width */
   height: auto; /* Auto height */
   border-radius: 0px;
@@ -354,53 +366,32 @@ button {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding: 0px;
-  width: 100%; /* Full width */
+  width: auto;
   height: auto; /* Auto height */
   border-radius: 0px;
 }
 
 /* Team Circle Image */
 .JCPIC{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 200px;
   background: url(Pics/JC.jpg);
-  background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
 }
 
 .MiggzPIC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 200px;
   background: url(Pics/Miggz.jpg);
-  background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
 }
 
 .LapidPIC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 200px;
   background: url(Pics/Lapid.jpg);
-  background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
 }
 
 .daniellePIC {
+  background: url(Pics/danielle.jpg);
+}
+.sumangPIC {
+  background: url(Pics/sumang.jpg);
+}
+
+.JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -408,57 +399,23 @@ button {
   padding: 0px;
   width: 200px;
   height: 200px;
-  background: url(Pics/danielle.jpg);
   background-size: cover;
   border-radius: 50%; /* Set the border-radius to 50% for a round image */
 }
 
-.sumangPIC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 200px;
-  background: url(Pics/sumang.jpg);
-  background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
-}
 
 /* Content */
-.team-circle-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 16px;
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  border-radius: 0px;
-}
-
-/* Info */
-.team-circle-info {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  height: auto; /* Auto height */
-  border-radius: 0px;
-  gap: 25px;
-}
-
-/* Team Member Name */
-.team-member-name {
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  font-family: 'Poppins';
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 150%;
+.team-circle-content, .team-circle-info {
+  width: 100%;
   text-align: center;
+}
+.team-member-name, .team-member-role {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.2vw; /* Adjust font size */
+  line-height: 150%;
+  font-style: normal;
+  line-height: 50%;
+  padding: 0.5vw 0; /* Add some vertical padding */
   color: #D8D8D8;
 }
 
@@ -466,14 +423,11 @@ button {
 .team-member-role {
   width: 100%; /* Full width */
   height: auto; /* Auto height */
-  padding-top: 25px;
-  font-family: 'Poppins';
-  font-style: normal;
+  padding-top: 1vw;
+  font-family: 'Poppins, sans-serif';
   font-weight: 400;
-  font-size: 18px;
-  line-height: 50%;
+  font-size: 1.2em;
   text-align: center;
-  color: #D8D8D8;
 }
 
 
@@ -484,8 +438,8 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4.44vw 1.66vw 0.55vw; /* Using viewport width for padding */
-  width: 100%; /* Full width */
+  width: 100%; /* Full width */  
+  padding-top: 4.44vw;
   min-height: auto; /* Height adjusts automatically */
   background: #4CAF50;
 }
@@ -500,19 +454,19 @@ button {
   height: auto; /* Height adjusts automatically */
   min-height: 320px;
 }
-
 /* Columns */
 .footercolumns {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
+  flex: 1;
   gap: 1.38vw; /* Reduce the gap using viewport width */
   width: 66.66%; /* Adjusted width */
   height: auto; /* Height adjusts automatically */
   min-height: 320px;
+  padding: 2vw; /* Add horizontal padding */
 }
-
 /* Column */
 .footercolumn {
   display: flex;
@@ -521,7 +475,8 @@ button {
   width: 25.22%; /* Adjusted width */
   height: auto; /* Height adjusts automatically */
   min-height: 320px;
-  font-size: 28px;
+  padding: 1vw; /* Add padding */
+  font-size: 1.2vw; /* Responsive font size */
 }
 .footer-links {
   display: flex;
@@ -529,7 +484,7 @@ button {
   align-items: flex-start;
   width: 25.22%; /* Adjusted width */
   height: auto; /* Height adjusts automatically */
-  min-height: 320px;
+  max-height: 320px;
 }
 
 /* Logo Wrapper */
@@ -540,7 +495,7 @@ button {
   padding: 1.11vw 0 0; /* Adjusted padding */
   width: 22.01vw; /* Adjusted width */
   height: auto; /* Height adjusts automatically */
-  min-height: 320px;
+  max-height: 320px;
 }
 
 /* Logo */
@@ -550,21 +505,21 @@ button {
   justify-content: center;
   align-items: center;
   padding: 0px;
-  width: 273px;
-  height: 260px;
+  width: 15vw; /* Responsive width */
+  height: 15vw;
   background: url(Pics/Metro.png);
   background-size: cover;
 }
 .footercolumn h2 {
   font-weight: 500;
-  font-size: 46px;
+  font-size: 2em;
   line-height: 120%;
-  color: #ffffff; 
+  color: #D8D8D8;
 }
 .footerabout, .footerarea
 {
   text-decoration: none;  /* Remove underline */
-  color: #000000; 
+  color: #D8D8D8;
 }
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
@@ -595,3 +550,146 @@ button {
 #smogProgressBar.moderate { background-color: yellow; color: black; }
 #smogProgressBar.high { background-color: orange; }
 #smogProgressBar.very-high { background-color: red; }
+
+/* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px */
+
+@media screen and (max-width: 768px) {
+  /* General Styles */
+  h1, p, h2 {
+    font-size: 1.6rem; /* Adjusted font size */
+  }
+
+  /* Navbar Adjustments */
+  .navbar, .navbar-container, .navbar-content {
+    max-height: auto;
+    padding: 0 2vw;
+  }
+  .navbar-logo h1, .navbar-link a {
+    font-size: 1.4rem; /* Adjusted font size */
+  }
+
+  /* Hero Heading Container */
+  .hero-heading-container {
+    flex-direction: column;
+    top: 5vw;
+    gap: 5vw;
+  }
+  .hero-heading, .hero-heading-content {
+    font-size: 2rem; /* Smaller font size */
+  }
+  .hero-heading-column a, .hero-heading-column b {
+    width: 90vw; /* Adjust width */
+  }
+
+  /* Hero Container Adjustments */
+  .hero-container {
+    flex-direction: column;
+    padding-top: 2vw;
+    padding-bottom: 2vw;
+    gap: 2vw;
+  }
+  .hero-container-column {
+    width: 100%; /* Full width */
+    padding-left: 3vw;
+  }
+  .hero-container-image {
+    width: 80vw;
+    height: auto;
+  }
+
+  /* Team Circles Adjustments */
+  .team-circles-container, .team-circles-columns {
+    gap: 4vw;
+  }
+  .JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
+    width: 25vw;
+    height: 25vw;
+  }
+  .team-member-name, .team-member-role {
+    font-size: 4vw;
+  }
+
+  /* Footer Adjustments */
+  .footercolumns, .footer-links, .footercolumn {
+    width: 100%;
+  }
+  .footerlogo-wrapper, .footerlogo {
+    width: 50vw;
+    height: auto;
+  }
+}
+
+
+/* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px */
+
+@media screen and (max-width: 480px) {
+  /* General Styles */
+  h1, p, h2 {
+    font-size: 1.2rem; /* Smaller font size */
+  }
+
+  /* Navbar Adjustments */
+  .navbar {
+    flex-direction: column;
+    padding: 5px;
+  }
+  .navbar-content, .navbar-menu {
+    flex-direction: column;
+    align-items: center;
+    gap: 2vw;
+  }
+  .navbar-logo h1, .navbar-link a {
+    font-size: 1.2rem;
+  }
+
+  /* Hero Container Adjustments */
+  .hero-container {
+    padding: 3vh;
+    margin: 0;
+    min-height: 60vh;
+  }
+  .hero-container-column {
+    padding: 0 10px;
+  }
+  .hero-heading, .hero-heading-content {
+    font-size: 1.8rem;
+  }
+  .hero-container-image {
+    width: 90%;
+    height: auto;
+  }
+
+  /* Team Circles Adjustments */
+  .team-circle-image-wrapper {
+    width: 120px;
+    height: 120px;
+  }
+  .team-member-name, .team-member-role {
+    font-size: 3.5vw;
+  }
+
+  /* Footer Adjustments */
+  .footercolumns, .footer-links, .footercolumn {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2vw;
+  }
+  .footerlogo-wrapper, .footerlogo {
+    width: 60vw;
+    height: auto;
+  }
+
+  /* Button and Progress Bar Adjustments */
+  button {
+    min-height: 40px;
+    font-size: 1.2rem;
+  }
+  .progress-bar-container, #smogRecommendation {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .progress-bar {
+    height: 12px;
+  }
+}

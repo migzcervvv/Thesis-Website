@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Website.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="navbar-container">
+            <div class="navbar-content">
+                <div class="navbar-logo">
+                    <a href="MetroBreathe.html">
+                         <h1>MetroBreathe</h1>
+                    </a>
+                </div>
+                <nav class="navbar-menu">
+                    <a href="MetroBreathe.html#team">About</a>
+                    <a href="#">Monitoring</a>
+                    <a href="#">Prediction</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <div class="hero-heading-right">
+        <div class="hero-background"></div>
+        <div class="hero-heading-container">
+            <div class="hero-heading-column a">
+                <h1 class="hero-heading">Air Monitoring and Prediction</h1>
+            </div>
+            <div class="hero-heading-column b">
+                <p class="hero-heading-content">Here you can monitor the current air levels and see our smog predictions for specific areas of Metro Manila!</p>
+            </div>
+        </div>
+    </div>
+    <section class="team-circles-container">        
+        <div class="column">
+            <h2>Air Quality Data</h2>
+            <div class="air-quality-data">
+                <p>Temperature: <span id="temperature"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Particulate Matter (PM2.5): <span id="pm25"></span></p>
+                <p>Carbon Dioxide: <span id="co2"></span></p>
+            </div>
+    
+            <h2>Smog Prediction</h2>
+            <div class="progress-bar-container">
+                <div class="progress-bar" id="smogProgressBar"></div>
+            </div>
+            <div class="smog-prediction-data">
+                <h2>Recommendation: </h2>
+                <p><span id="recommendation"></span></p>
+            </div>
+        </div>
+
+        <div class="footer">
+        
+            <!-- Main Content Wrapper -->
+            <div class="footermain-content-wrapper">
+                
+          <!-- Logo Wrapper -->
+          <div class="footerlogo-wrapper">
+            <a href="MetroBreathe.html">
+              <div class="footerlogo">
+              </div></a>
+          </div>
+      
+                <!-- Columns -->
+                <div class="footercolumns">
+      
+                    <!-- Single Column -->
+                    <div class="footercolumn">
+                        <h2>Team</h2>
+                        <div class="footer-links">
+                            <a href="MetroBreathe.html#team" class="footerabout">About</a>
+                        </div>
+                    </div>
+      
+                    <!-- Single Column -->
+                    <div class="footercolumn">
+                        <h2>Predictions</h2>
+                        <div class="footer-links">
+                            <a href="SecondPage.html" class="footerarea">Intramuros</a>
+                            <a href="SecondPage.html#" class="footerarea">Quiapo</a>
+                            <a href="SecondPage.html#" class="footerarea">España</a>
+                        </div>
+                    </div>
+      
+                    <!-- Single Column -->
+                    <div class="footercolumn">
+                        <h2>Monitoring</h2>
+                        <div class="footer-links">
+                            <a href="SecondPage.html" class="footerarea">Intramuros</a>
+                            <a href="SecondPage.html" class="footerarea">Quiapo</a>
+                            <a href="SecondPage.html" class="footerarea">España</a>
+                        </div>
+                    </div>
+      
+                </div> 
+      
+            </div> 
+
+
+        <script src="AirQuality"></script>    
+</body>
+
+</html>
