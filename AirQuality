@@ -51,6 +51,11 @@ document.addEventListener('DOMContentLoaded', function() {
         });
 });
 
+document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('navbar-menu');
+    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+});
+
 function updateSmogProgressBar(smogLevel) {
     const progressBar = document.getElementById('smogProgressBar');
     const recommendationText = document.getElementById('recommendation'); // updated ID

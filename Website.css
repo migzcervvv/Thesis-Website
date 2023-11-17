@@ -24,15 +24,18 @@ p {
   line-height: 150%;
   color: #212121;
 }
-
+.mobile-menu-icon {
+  display: none;
+}
 .navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%; /* Responsive width */
-  max-height: 4vw;
-  min-height: 70px;
+  max-width: 1250px; /* Max width constraint */
+  max-height: 15vh;
+  min-height: 8vh;
   background: #4CAF50;
   border-radius: 0px;
 }
@@ -44,7 +47,6 @@ p {
   align-items: center;
   padding: 0px;
   width: 100%; /* Responsive width */
-  max-width: 1250vw; /* Max width constraint */
   max-height: 70px;
   border-radius: 0px;
   margin: 0 auto; /* Centering */
@@ -66,12 +68,12 @@ p {
 .navbar-logo {
   display: flex;
   flex-direction: row;
-  flex: 1; /* Distributes space evenly */
+  flex: 1; 
   align-items: flex-start;
   padding: 0px;
   margin: 0 auto;
-  width: 261px; /* Fixed width, consider making this responsive if needed */
-  height: 52px;
+  width: 15vw; /* Fixed width, consider making this responsive if needed */
+  height: auto;
   border-radius: 0px;
 }
     
@@ -83,7 +85,7 @@ p {
       line-height: 54px;
       color: #FFFFFF;
     }
-    .navbar-logo a{
+.navbar-logo a{
       color: #FFFFFF;
       text-decoration: none;
     }
@@ -161,7 +163,7 @@ p {
   align-items: flex-start;
   padding: 0px;
   gap: 1vw; /* Responsive gap */
-  width: auto; /* Adjust width to auto */
+  width: 100%;
   height: auto; /* Adjust height to auto */
   border-radius: 0px;
 }
@@ -181,7 +183,7 @@ p {
   align-items: flex-start;
   padding: 0;
   gap: 1vw; /* Responsive gap */
-  width: auto; /* Adjust width to auto */
+  width: 100%;
   max-width: 1200px;
   height: auto; /* Adjust height to auto */
   border-radius: 0px;
@@ -226,7 +228,7 @@ p {
 .hero-container-content {
   flex-direction: column;
   align-items: center;
-  gap: 1em; /* Adjust gap to a more reasonable unit */
+  gap: 1.5em; /* Adjust gap to a more reasonable unit */
 }
 
 /* Actions */
@@ -552,145 +554,168 @@ button:not([disabled]):active {
 #smogProgressBar.high { background-color: orange; }
 #smogProgressBar.very-high { background-color: red; }
 
-/* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px *//* Mobile Screens: max-width of 768px */
-
-@media screen and (max-width: 768px) {
-  /* General Styles */
-  h1, p, h2 {
-    font-size: 1.6rem; /* Adjusted font size */
-  }
-
-  /* Navbar Adjustments */
-  .navbar, .navbar-container, .navbar-content {
-    max-height: auto;
-    padding: 0 2vw;
-  }
-  .navbar-logo h1, .navbar-link a {
-    font-size: 1.4rem; /* Adjusted font size */
-  }
-
-  /* Hero Heading Container */
-  .hero-heading-container {
-    flex-direction: column;
-    top: 5vw;
-    gap: 5vw;
-  }
-  .hero-heading, .hero-heading-content {
-    font-size: 2rem; /* Smaller font size */
-  }
-  .hero-heading-column a, .hero-heading-column b {
-    width: 90vw; /* Adjust width */
-  }
-
-  /* Hero Container Adjustments */
-  .hero-container {
-    flex-direction: column;
-    padding-top: 2vw;
-    padding-bottom: 2vw;
-    gap: 2vw;
-  }
-  .hero-container-column {
-    width: 100%; /* Full width */
-    padding-left: 3vw;
-  }
-  .hero-container-image {
-    width: 80vw;
-    height: auto;
-  }
-
-  /* Team Circles Adjustments */
-  .team-circles-container, .team-circles-columns {
-    gap: 4vw;
-  }
-  .JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
-    width: 25vw;
-    height: 25vw;
-  }
-  .team-member-name, .team-member-role {
-    font-size: 4vw;
-  }
-
-  /* Footer Adjustments */
-  .footercolumns, .footer-links, .footercolumn {
-    width: 100%;
-  }
-  .footerlogo-wrapper, .footerlogo {
-    width: 50vw;
-    height: auto;
-  }
-}
-
-
 /* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px */
 
 @media screen and (max-width: 480px) {
-  /* General Styles */
-  h1, p, h2 {
-    font-size: 1.2rem; /* Smaller font size */
-  }
+    /* Navbar Adjustments for Mobile */
+    body, h1, p, h2 {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      width: 100%; /* Full width */
+      font-style: normal;
+      color: #000000;
+      content: justify;
+    }
+      
+    /* H1 */
+    h1 {
+      font-weight: 700;
+      font-size: 1rem;
+      line-height: 120%;
+    }
+    
+    /* Paragraph */
+    p {
+      width: 100%; /* Full width */
+      font-weight: 400;
+      font-size: 0.8rem;
+      line-height: 150%;
+      color: #212121;
+    }
 
-  /* Navbar Adjustments */
   .navbar {
-    flex-direction: column;
-    padding: 5px;
+    max-width: 100%;
+    height: 2vh;
+  }    
+  .navbar-container {
+      padding: 0 10px;
   }
-  .navbar-content, .navbar-menu {
-    flex-direction: column;
-    align-items: center;
+  .navbar-content {
+      flex-grow: 0; /* Prevents logo from taking unnecessary space */
+      width: 100%; /* Responsive width */
+      gap: 1vw;
+  }
+  .navbar-logo {
+      gap: 1vw;
+  }
+
+  /* Show the mobile menu icon on mobile screens */
+  .mobile-menu-icon {
+      margin-left: auto; /* Aligns the button to the right */
+      font-size: 1em;
+      cursor: pointer;
+      display: block; /* Only show the button on mobile screens */
+  }
+  
+  .navbar-menu {
+      display: none; /* Hide the dropdown menu initially */
+      flex-direction: column;
+      height: auto;
+      background-color: #f9f9f9; /* Background color for dropdown */
+      text-align: left;
+      top: 5%;
+      position: absolute; /* Positioning relative to the navbar */
+      box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Optional: adds a shadow for depth */
+      z-index: 1; /* Ensures dropdown appears above other content */
+      box-sizing: border-box;
+  }
+  
+  .navbar-menu a {
+      display: block;
+      padding: 10px;
+      color: black; /* Text color for visibility */
+      text-decoration: none;
+  }
+
+
+.hero-heading-right {
+    min-height: 50vw; /* Adjust for smaller screens */
+    border-radius: 8px; /* Soften edges */
+}
+
+.hero-background {
+    background-size: cover; /* Ensure full background visibility */
+    background-repeat: no-repeat;
+}
+
+.hero-heading-container {
+    flex-direction: column; /* Stack items vertically */
+    gap: 4vw; /* Reduce gap */
+    max-height: none; /* Remove max height restriction */
+    top: 10vw; /* Adjust top position */
+}
+
+.hero-heading-column a,
+.hero-heading-column b {
+    flex-direction: column; /* Stack items vertically */
     gap: 2vw;
-  }
-  .navbar-logo h1, .navbar-link a {
-    font-size: 1.2rem;
-  }
+}
 
-  /* Hero Container Adjustments */
-  .hero-container {
-    padding: 3vh;
-    margin: 0;
-    min-height: 60vh;
-  }
-  .hero-container-column {
-    padding: 0 10px;
-  }
-  .hero-heading, .hero-heading-content {
-    font-size: 1.8rem;
-  }
-  .hero-container-image {
-    width: 90%;
-    height: auto;
-  }
+.hero-heading, .hero-heading-content {
+    font-size: 4vw; /* Adjust font size based on screen width */
+    text-align: center; /* Center-align text */
+}
 
-  /* Team Circles Adjustments */
-  .team-circle-image-wrapper {
-    width: 120px;
-    height: 120px;
-  }
-  .team-member-name, .team-member-role {
-    font-size: 3.5vw;
-  }
+/* Adjustments for hero container and related elements */
+.hero-container {
+    min-height: 10vh; /* Adjust minimum height */
+    max-height: 30vh;
+}
+.hero-container-column {
+  max-height: 85vw;
+  padding-left: 4vw;
+}
+.hero-container-column p{
+  font-size: 2vw;
+}
 
-  /* Footer Adjustments */
-  .footercolumns, .footer-links, .footercolumn {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 2vw;
-  }
-  .footerlogo-wrapper, .footerlogo {
-    width: 60vw;
-    height: auto;
-  }
+.hero-container-image {
+    max-width: 100%; /* Full width for images */
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-radius: 0%;
+}
+button {
+  font-size: 1.2vw; /* Dynamic font size based on screen width */
+  padding: 1vw 2vw; /* Use viewport width for padding */
+  margin: 1vw 2.5vw; /* Adjust margin for spacing */
+}
 
-  /* Button and Progress Bar Adjustments */
-  button {
-    min-height: 40px;
-    font-size: 1.2rem;
-  }
-  .progress-bar-container, #smogRecommendation {
-    width: 100%;
-    margin: 10px 0;
-  }
-  .progress-bar {
-    height: 12px;
-  }
+.team-circle-image-wrapper {
+    width: 25vw; /* Scale based on viewport width */
+    height: 25vw; /* Maintain aspect ratio */
+    max-width: 120px; /* Limit maximum size */
+    max-height: 120px; /* Limit maximum size */
+}
+.JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 15vw;
+  height: 15vw;
+  background-size: cover;
+  border-radius: 50%; /* Set the border-radius to 50% for a round image */
+}
+.team-member-name, .team-member-role {
+    font-size: 4.5vw; /* Adjust font size for better readability */
+}
+
+/* Footer Adjustments */
+.footercolumns, .footer-links, .footercolumn {
+    gap: 4vw; /* Adjust gap for better spacing */
+}
+.footerlogo-wrapper, .footerlogo {
+    width: 50vw; /* Adjust width to fit smaller screens */
+    max-width: 300px; /* Set a maximum width */
+}
+
+/* Progress Bar Adjustments */
+.progress-bar-container, #smogRecommendation {
+    margin: 5px 0; /* Adjust margin for spacing */
+}
+.progress-bar {
+    height: 8px; /* Adjust height for consistency */
+}
 }
