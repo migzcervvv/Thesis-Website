@@ -246,12 +246,12 @@ p {
 /* Button */
 button {
   appearance: button;
-  background-color: #000; /* Black background */
-  border: 1px solid #000; /* Black border */
+  background-color: #41B883; /* Black background */
+  border: 1px solid #41B883; /* Black border */
   border-radius: 4px; /* Adjusted border-radius */
-  box-shadow: #fff 4px 4px 0 0, #000 4px 4px 0 1px; /* Box shadow styling */
+  box-shadow: #FFFFFF 4px 4px 0 0, #4CAF50 4px 4px 0 1px; /* Box shadow styling */
   box-sizing: border-box;
-  color: #fff; /* White text color */
+  color: #D8D8D8; /* White text color */
   cursor: pointer;
   display: inline-block; /* Use inline-block for button layout */
   font-family: 'Poppins', sans-serif; /* Font styling */
@@ -475,6 +475,7 @@ button:not([disabled]):active {
   width: 25.22%; /* Adjusted width */
   height: auto; /* Height adjusts automatically */
   min-height: 320px;
+  gap: 1em;
   padding: 1vw; /* Add padding */
   font-size: 1.2vw; /* Responsive font size */
 }
