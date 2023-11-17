@@ -3,7 +3,7 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - master # Adjust this if you are using a different branch
+      - master  # Adjust this if you are using a different branch
 
 jobs:
   deploy:
@@ -27,4 +27,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .MetroBreathe.html
+          publish_dir: .  # Use the root of your repository
