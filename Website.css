@@ -246,7 +246,7 @@ p {
 }
 
 /* Button */
-button {
+.smog{
   appearance: button;
   background-color: #41B883; /* Black background */
   border: 1px solid #41B883; /* Black border */
@@ -273,7 +273,7 @@ button {
   text-transform: none;
 }
 
-button:not([disabled]):active {
+.smog:not([disabled]):active {
   transform: translate(2px, 2px); /* Translate on active */
 }
 
@@ -454,6 +454,7 @@ button:not([disabled]):active {
   justify-content: space-between;
   width: 100%;
   height: auto; /* Height adjusts automatically */
+  background: #4CAF50;
 }
 /* Columns */
 .footercolumns {
@@ -521,6 +522,107 @@ button:not([disabled]):active {
   text-decoration: none;  /* Remove underline */
   color: #D8D8D8;
 }
+/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
+
+/* Features List For 2nd page*/
+
+/* Container for the AQMS section */
+.aqms-container {
+  position: relative; /* Add this line */
+  display: flex;
+  padding: 25px;
+  box-sizing: border-box;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3vw;
+  background: #FFFFFF;
+  width: 100%;
+  height: auto; 
+  padding-top: 3vw;
+  padding-bottom: 3vw;
+}
+/* Title style unique to AQMS */
+.aqms-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 2.5vw;
+  line-height: 120%;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+  margin-bottom: 2%;
+}
+
+/* Main content style */
+.aqms-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100%;
+  height: auto;
+}
+
+/* Description style unique to AQMS */
+.aqms-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1.5vw;
+  line-height: 150%;
+  text-align: justify;
+  color: #000000;
+  width: 100%;
+}
+.aqms-description p{
+  margin-bottom: 1%;
+}
+
+/* Features container */
+.aqms-features {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2vw;
+  width: 100%;
+  justify-content: space-evenly;
+}
+
+/* Individual feature item */
+.aqms-feature-item {
+  display: flex;
+  flex-direction: row ;
+  align-items: center;
+  gap: 1vw;
+  width: 100%;
+}
+
+.aqms-feature-item p{ 
+  text-align: justify;
+}
+
+/* Feature image icon */
+.aqms-icon {
+  background-size: contain;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  width: 5vw;
+  height: 5vw;
+  max-width: 10vw;
+  max-height: 10vw;
+}
+
+/* Feature description */
+.aqms-feature-description {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 150%;
+  text-align: center;
+  color: #000000;
+  width: 100%;
+}
 
 /* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
@@ -552,6 +654,7 @@ button:not([disabled]):active {
 #smogProgressBar.very-high { background-color: red; }
 
 /* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px */
+/* Media Query for max-width: 480px */
 
 @media screen and (max-width: 480px) {
     /* Navbar Adjustments for Mobile */
@@ -578,7 +681,7 @@ button:not([disabled]):active {
       font-weight: 400;
       font-size: 0.8rem;
       line-height: 150%;
-      color: #212121;
+      color: #242424;
     }
 
   .navbar {
@@ -599,11 +702,15 @@ button:not([disabled]):active {
 
   /* Show the mobile menu icon on mobile screens */
   .mobile-menu-icon {
-      margin-left: auto; /* Aligns the button to the right */
-      font-size: 1em;
-      cursor: pointer;
-      display: block; /* Only show the button on mobile screens */
-  }
+    background-color: #41B883; /* Black background */
+    margin-left: auto; /* Aligns the button to the right */
+    font-size: 1em;
+    cursor: pointer;
+    display: block; /* Only show the button on mobile screens */
+    border-radius: 4px;
+    padding: 2%;
+    text-align: center;
+}
   
   .navbar-menu {
       display: none; /* Hide the dropdown menu initially */
@@ -657,14 +764,21 @@ button:not([disabled]):active {
 /* Adjustments for hero container and related elements */
 .hero-container {
     flex-direction: column;
-    min-height: 10vh; /* Adjust minimum height */
-    max-height: 30vh;
+    min-height: 100%; /* Adjust minimum height */
+    box-sizing: border-box;
+    padding: 3vw;
 }
 .hero-container-column {
-  max-height: 85vw;
-  width: 75%;
-  padding-left: 4vw;
+  max-height: 30vh;
+  width: 80%;
+  display: contents;
 }
+
+.hero-container-content{
+  max-height: 30vh;
+  display: contents;
+}
+
 .hero-container-column h1{
   font-size: 1.5rem;
   margin-top: 1%;
@@ -682,11 +796,13 @@ button:not([disabled]):active {
     background-repeat: no-repeat;
     border-radius: 0%;*/
 }
-button {
+.smog{
+  width: 40vw;
   font-size: 0.6em; /* Dynamic font size based on screen width */
   padding: 1vw 2vw; /* Use viewport width for padding */
   margin-top: 1vw;
 }
+
 .team-circles-container{
   padding-bottom: 5vw;
 }
@@ -762,6 +878,41 @@ button {
     margin: 5px 0; /* Adjust margin for spacing */
 }
 .progress-bar {
-    height: 8px; /* Adjust height for consistency */
+    height: 4vw; /* Adjust height for consistency */
 }
+
+.aqms-title {
+  font-size: 6vw;
+  margin-bottom: 20px;
+}
+.aqms-description p{
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+.aqms-feature-description {
+  font-size: 4vw;
+  margin-bottom: 20px;
+}
+
+.aqms-content {
+  flex-direction: column;
+  align-items: center;
+}
+
+.aqms-features {
+  flex-direction: column;
+  align-items: center;
+}
+.aqms-feature-item{
+  flex-direction: column;
+}
+
+.aqms-icon {
+  width: 20vw;
+  height: 20vw;
+  max-width: none;
+  max-height: none;
+  margin-bottom: 20px;
+}
+
 }

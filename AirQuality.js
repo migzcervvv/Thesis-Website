@@ -49,11 +49,16 @@ document.addEventListener('DOMContentLoaded', function() {
         .catch(error => {
             console.error('Error fetching air quality data:', error);
         });
-});
+
 
 document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+    console.log("Button Clicked!");
     var menu = document.getElementById('navbar-menu');
-    menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+    if (menu.style.display === 'block') {
+        menu.style.display = 'none';
+    } else {
+        menu.style.display = 'block';
+    }
 });
 
 function updateSmogProgressBar(smogLevel) {
@@ -78,3 +83,4 @@ function updateSmogProgressBar(smogLevel) {
 
     progressBar.textContent = smogLevel.toFixed(2) + '%';
 }
+});

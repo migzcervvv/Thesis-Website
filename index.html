@@ -5,27 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Website.css">
 </head>
-
-<body>
-    <header class="navbar">
-        <div class="navbar-container">
-            <div class="navbar-content">
-                <div class="navbar-logo">
-                    <a href="index.html">
-                        <h1>MetroBreathe</h1>
-                    </a>
-                </div>
-                <button class="mobile-menu-icon" id="mobile-menu-toggle">☰</button>
-                <nav class="navbar-menu" id="navbar-menu">
-                    <a href="#team">About</a>
-                    <a href="SecondPage.html">Monitoring</a>
-                    <a href="SecondPage.html">Prediction</a>
-                </nav>
+<header class="navbar">
+    <div class="navbar-container">
+        <div class="navbar-content">
+            <div class="navbar-logo">
+                <a href="index.html">
+                    <h1>MetroBreathe</h1>
+                </a>
             </div>
+            <button class="mobile-menu-icon" id="mobile-menu-toggle">☰</button>
+            <nav class="navbar-menu" id="navbar-menu">
+                <a href="#team">About</a>
+                <a href="SecondPage.html">Monitoring</a>
+            </nav>
         </div>
-    </header>
-    
-    
+    </div>
+</header>
+<body>
     <div class="hero-heading-right">
         <div class="hero-background">
             <div class="hero-heading-container">
@@ -52,7 +48,7 @@
                 </p>
                 <div class="hero-container-actions">
                     <a href="SecondPage.html">
-                        <button role="button">SEE SMOG PREDICTIONS!</button>
+                        <button role="button" class="smog">SEE SMOG PREDICTIONS!</button>
                     </a>
                 </div>
             </div>
@@ -141,7 +137,7 @@
     <div class="footer">
         
       <!-- Main Content Wrapper -->
-      <div class="footermain-content-wrapper">
+        <div class="footermain-content-wrapper">
           
           <!-- Logo Wrapper -->
           <div class="footerlogo-wrapper">
@@ -155,38 +151,31 @@
 
               <!-- Single Column -->
               <div class="footercolumn">
-                  <h2>Team</h2>
                   <div class="footer-links">
-                      <a href="#team" class="footerabout">About</a>
+                      <a href="#team" class="footerabout"><h2>Team</h2></a>
                   </div>
               </div>
 
               <!-- Single Column -->
               <div class="footercolumn">
-                  <h2>Predictions</h2>
-                  <div class="footer-links">
-                      <a href="SecondPage.html" class="footerarea">Intramuros</a>
-                      <a href="SecondPage.html#" class="footerarea">Quiapo</a>
-                      <a href="SecondPage.html#" class="footerarea">España</a>
+                    <div class="footer-links">
+                        <a href="SecondPage.html" class="footerarea"><h2>Monitoring</h2></a>
                   </div>
               </div>
-
               <!-- Single Column -->
               <div class="footercolumn">
-                  <h2>Monitoring</h2>
-                  <div class="footer-links">
-                      <a href="SecondPage.html" class="footerarea">Intramuros</a>
-                      <a href="SecondPage.html" class="footerarea">Quiapo</a>
-                      <a href="SecondPage.html" class="footerarea">España</a>
-                  </div>
-              </div>
-
-          </div> 
+                <div class="footer-links">
+                    <a href="https://github.com/migzcervvv/Thesis-Website" class="footerarea" target="_blank">
+                        <h2>GitHub</h2>
+                    </a>
+                </div>
+            </div>            
+        </div> 
 
       </div> 
   </div> <!-- End of Footer -->
 
-  <script src="AirQuality"></script>
+<script src="AirQuality.js"></script>
 </body>
 </html>
 

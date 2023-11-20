@@ -52,5 +52,5 @@ rf_model = stack_model.named_estimators_['rf']
 importances = rf_model.feature_importances_
 print(f'Feature Importances from RandomForest: {importances}')
 
-with open('model1.pkl', 'wb') as file:
+with open('Backend/model1.pkl', 'wb') as file:
     pickle.dump(stack_model, file)
