@@ -1,181 +1,202 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MetroBreathe</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet">
+  </head>
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Website.css">
-</head>
-<header class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-content">
-            <div class="navbar-logo">
-                <a href="index.html">
-                    <h1>MetroBreathe</h1>
-                </a>
-            </div>
-            <button class="mobile-menu-icon" id="mobile-menu-toggle">☰</button>
-            <nav class="navbar-menu" id="navbar-menu">
-                <a href="#team">About</a>
-                <a href="SecondPage.html">Monitoring</a>
-            </nav>
-        </div>
-    </div>
-</header>
-<body>
-    <div class="hero-heading-right">
-        <div class="hero-background">
-            <div class="hero-heading-container">
-                <div class="hero-heading-column a">
-                    <h1 class="hero-heading">Breathing Life into Metro Manila's Air Quality</h1>
-                </div>
-                <div class="hero-heading-column b">
-                    <p class="hero-heading-content">Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <main class="hero-container">
-        <div class="hero-container-column">
-            <div class="hero-container-content">
-                <h1>Understanding The Urgency</h1>
-                <p>In 2022, the Philippines ranked 69th among the world's most polluted regions, with PM2.5 levels three times higher than WHO safety standards. 
-                    While there was a temporary improvement during the 2020 lockdowns, pollution rebounded as restrictions eased, reaching 14.9 μg/m³.
-                </p>
-                <p>
-                    To overcome this problem, a comprehensive smart air pollution monitoring system and smog prediction model 
-                    is proposed for enhancing air quality in areas of Manila specifically in Quiapo, España Boulevard, and Intramuros. 
-                </p>
-                <div class="hero-container-actions">
-                    <a href="SecondPage.html">
-                        <button role="button" class="smog">SEE SMOG PREDICTIONS!</button>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="hero-container-column">
-            <div class="hero-container-image"></div>
-        </div>
-    </main>
-    
-    </section>
-    <!-- Team Circles Section -->
-    <section class="team-circles-container" id="team">
-        <div class="team-circles-title">
-            <h2 class="team-circles-section">Team Section</h2>
-            <p class="team-circles-description">Our team consists of Computer Engineering Students from Pamantasan ng Lungsod ng Maynila</p>
-        </div>
-
-        <div class="team-circles-columns">
-            <!-- Team Circle 1 -->
-            <div class="team-circle-card">
-                <div class="team-circle-image-wrapper">
-                    <div class="JCPIC"></div>
-                </div>
-                <div class="team-circle-content">
-                    <div class="team-circle-info">
-                        <p class="team-member-name">Jhun Cidrex Castro</p>
-                        <p class="team-member-role">UI Designer</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Circle 2 -->
-            <div class="team-circle-card">
-                <div class="team-circle-image-wrapper">
-                    <div class="MiggzPIC"></div>
-                </div>
-                <div class="team-circle-content">
-                    <div class="team-circle-info">
-                        <p class="team-member-name">Miggz Cervantes</p>
-                        <p class="team-member-role">Lead Programmer</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Circle 3 -->
-            <div class="team-circle-card">
-                <div class="team-circle-image-wrapper">
-                    <div class="LapidPIC"></div>
-                </div>
-                <div class="team-circle-content">
-                    <div class="team-circle-info">
-                        <p class="team-member-name">Henderson Eiann Lapid</p>
-                        <p class="team-member-role">Hardware Design</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Circle 4 -->
-            <div class="team-circle-card">
-                <div class="team-circle-image-wrapper">
-                    <div class="daniellePIC"></div>
-                </div>
-                <div class="team-circle-content">
-                    <div class="team-circle-info">
-                        <p class="team-member-name">Danielle Loi Martino</p>
-                        <p class="team-member-role">Hardware Design</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Team Circle 5 -->
-            <div class="team-circle-card">
-                <div class="team-circle-image-wrapper">
-                    <div class="sumangPIC"></div>
-                </div>
-                <div class="team-circle-content">
-                    <div class="team-circle-info">
-                        <p class="team-member-name">John Angelo Sumang</p>
-                        <p class="team-member-role">Researcher</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Footer -->
-    <div class="footer">
-        
-      <!-- Main Content Wrapper -->
-        <div class="footermain-content-wrapper">
-          
-          <!-- Logo Wrapper -->
-          <div class="footerlogo-wrapper">
-            <a href="index.html">
-              <div class="footerlogo">
-              </div></a>
+  <body class="body">
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand me-auto" href="index.html">MetroBreathe</a>
+        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MetroBreathe</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-
-          <!-- Columns -->
-          <div class="footercolumns">
-
-              <!-- Single Column -->
-              <div class="footercolumn">
-                  <div class="footer-links">
-                      <a href="#team" class="footerabout"><h2>Team</h2></a>
-                  </div>
-              </div>
-
-              <!-- Single Column -->
-              <div class="footercolumn">
-                    <div class="footer-links">
-                        <a href="SecondPage.html" class="footerarea"><h2>Monitoring</h2></a>
-                  </div>
-              </div>
-              <!-- Single Column -->
-              <div class="footercolumn">
-                <div class="footer-links">
-                    <a href="https://github.com/migzcervvv/Thesis-Website" class="footerarea" target="_blank">
-                        <h2>GitHub</h2>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Monitoring</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">What is AQI?</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link mx-lg-2" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+    <!--Navbar-->
+<!--  hero-section  -->
+    <section class ="hero-section">
+        <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+            <div class="row">
+              <h1 style="color: bisque">Breathing Life into Metro Manila's Air Quality</h1>
+              <h2 style="color: bisque">Empowering Metro Manila with Smog-Free Tomorrows through Advanced Air Quality Predictions.</h2>
+            </div>
+            <a href="#" role="button" class="btn btn-outline-success">Check Current Air Levels!</a>
+        </div>
+    </section>
+<!--  hero-section  -->
+          <section id="about" class="main-content section-padding" style="padding: 3%;">
+            <div class="container-xxl">  
+              <div class="row align-items-center">
+                <div class="col-12 text-center">
+                  <h1 class="navbar-brand me-auto">About MetroBreathe</h1>
+                  <p class="hidden" style = "padding-left: 15%; padding-right: 15%;">MetroBreathe strives to provide an informative website designed to enhance people's understanding of the significance of the Air Quality Index (AQI).</p>
+                </div>
+                <div class="col-lg-5 col-md-12 col-12 gy-5">
+                  <div class="manila"></div>
+                </div>
+                <div class="col-lg-7 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <h1 style="color: #121212;">Understanding The Urgency</h1>
+                    <p>
+                      In 2022, the Philippines ranked 69th among the world's most polluted regions, with PM2.5 levels three times higher than WHO safety standards. 
+                      While there was a temporary improvement during the 2020 lockdowns, pollution rebounded as restrictions eased, reaching 14.9 μg/m³.
+                    </p>
+                    <p>
+                      To overcome this problem, a comprehensive smart air pollution monitoring system and smog prediction model is proposed for 
+                      enhancing air quality in <strong class="text-danger">(AREA NOT YET DECIDED).</strong>
+                    </p>
+                    <a href="SecondPage.html">
+                      <button type="button" class="btn btn-outline-success" style="background-color: whitesmoke;">CHECK OUR PREDICTIONS!</button>
                     </a>
                 </div>
-            </div>            
-        </div> 
+              </div>
+            </div>
+          </section>
 
-      </div> 
-  </div> <!-- End of Footer -->
+          <section id="team" class = "team-section" style = "background-color: whitesmoke;">
+            <div class="container-xxl text-center py-5">
+              <h3>Our Team</h3>
+              <h4 class="text-muted">Our team consists of Computer Engineering Students from Pamantasan ng Lungsod ng Maynila</h4>
+              <div class="row row-cols-1 row-cols-md-3 g-4 py-5">
+                  <div class="col">
+                    <div class="card">
+                      <img src="Pics/JC.jpg" class="card-img-top" alt="Picture of Jc Castro">
+                      <div class="card-body">
+                        <h5 class="card-title">Jhun Cidrex Castro</h5>
+                        <p class="card-text" style="text-align: center;">Researcher</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="Pics/Miggz.jpg" class="card-img-top" alt="Picture of Miggz Cervantes">
+                      <div class="card-body">
+                        <h5 class="card-title">Michael Gabriel Cervantes</h5>
+                        <p class="card-text" style="text-align: center;">Website Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="Pics/Lapid.jpg" class="card-img-top" alt="Picture of Henderson Lapid">
+                      <div class="card-body">
+                        <h5 class="card-title">Henderson Eiann Lapid</h5>
+                        <p class="card-text" style="text-align: center;">Hardware Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="Pics/danielle.jpg" class="card-img-top" alt="Picture of Danielle Martino">
+                      <div class="card-body">
+                        <h5 class="card-title">Danielle Loi Martino</h5>
+                        <p class="card-text" style="text-align: center;">Hardware Developer</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card">
+                      <img src="Pics/sumang.jpg" class="card-img-top" alt="Picture of John Sumang">
+                      <div class="card-body">
+                        <h5 class="card-title">John Angelo Sumang</h5>
+                        <p class="card-text" style="text-align: center;">Researcher</p>
+                      </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          </div>
+          </section>
 
-<script src="AirQuality.js"></script>
-</body>
+
+
+<!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER-->
+          <footer class = "pt-5 pb-4" style="background-color: whitesmoke;">
+            <hr class="mb-4">
+
+            <div class="container-xxl text-center text-md-left">
+
+              <div class="row text-center text-md-left">
+
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 class = "navbar-brand me-auto">MetroBreathe</h5>
+                  <p>MetroBreathe is a smart air pollution monitoring system and smog prediction model developed for Metro Manila. It aims to provide real-time air quality data and predict smog occurrences, 
+                    aiding local authorities in effective air quality management and promoting public health and environmental sustainability.</p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class="text-uppercasemb-4 font-weight-bold text-success">About Us</h5>
+                  <p>
+                    <a href = "#" class = "text-black" style="text-decoration: none;">
+                      Our Team
+                    </a>
+                  </p>
+                  <p>
+                    <a href = "https://github.com/migzcervvv/Thesis-Website" class = "text-black" style="text-decoration: none;">
+                      GitHub Repository
+                    </a>
+                  </p>
+                </div>
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 class = "text-uppercase mb-4 font-weight-bold text-success">Useful Links</h5>
+                  <p>
+                    <a href = "#" class = "text-black" style="text-decoration: none;">
+                      What is AQI?
+                    </a>
+                  </p>
+                  <p>
+                    <a href = "#" class = "text-black" style="text-decoration: none;">
+                      Air Monitoring
+                    </a>
+                  </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <a href = "#" style="text-decoration: none;"><h5 class = "text-uppercase mb-4 font-weight-bold text-success">Contact</h5></a>
+                </div>
+              </div>
+              <hr class="mb-4">
+              <div class="row align-items-center">
+                <div class="col-md-7 col-lg-8">
+                  <p> <strong class ="text-warning">Disclaimer</strong>
+                    This project is solely intended for academic purposes only.
+                  </p>
+                </div>
+                </div>
+              </div>
+            </div>
+
+          </footer>
+    <!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
 </html>
-

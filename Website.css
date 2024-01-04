@@ -1,917 +1,190 @@
-body, h1, p, h2 {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  width: 100%; /* Full width */
-  font-style: normal;
-  color: #000000;
-  content: justify;
-}
-  
-/* H1 */
-h1 {
-  font-weight: 700;
-  font-size: 3rem;
-  line-height: 120%;
+.body h1 {
+  font-size: 2.5rem;
+  font-weight: bold;}
+
+.body p {
+  font-size: 1.3rem;
+  text-align: justify;
+  font-weight: 400;
+  color: #121212;
 }
 
-/* Paragraph */
-p {
-  width: 100%; /* Full width */
-  font-style: normal;
-  font-weight: 400;
-  font-size: 1.2rem;
-  line-height: 150%;
-  color: #212121;
-}
-.mobile-menu-icon {
-  display: none;
-}
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%; /* Responsive width */
-  max-width: 100vw; /* Max width constraint */
-  max-height: 15vh;
-  min-height: 8vh;
-  background: #4CAF50;
-  border-radius: 0px;
+  background-color: white;
+  height: 10%;
+  margin: 20px;
+  border-radius: 16px;
+  padding: 0.5rem;
 }
 
-.navbar-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 100%; /* Responsive width */
-  max-height: 70px;
-  border-radius: 0px;
-  margin: 0 auto; /* Centering */
-}
-
-.navbar-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px;
-  gap: 40vw;
-  width: 100%; /* Responsive width */
-  max-width: 1200px; /* Max width constraint */
-  height: 69px;
-  border-radius: 0px;
-}
-
-.navbar-logo {
-  display: flex;
-  flex-direction: row;
-  flex: 1; 
-  align-items: flex-start;
-  padding: 0px;
-  margin: 0 auto;
-  width: 15vw; /* Fixed width, consider making this responsive if needed */
-  height: auto;
-  border-radius: 0px;
-}
-    
-.navbar-logo h1{
-      font-family: 'Poppins', sans-serif;
-      font-style: normal;
-      font-weight: 700;
-      font-size: 36px;
-      line-height: 54px;
-      color: #FFFFFF;
-    }
-.navbar-logo a{
-      color: #FFFFFF;
-      text-decoration: none;
-    }
-    
-    
-.navbar-menu {
-      display: flex;
-      flex-direction: row;
-      align-items: center;
-      padding: 0px;
-      gap: 32px;
-      margin: 0 auto;
-      width: 100%; /* Full width */ 
-      height: 69px;
-      border-radius: 0px;
-    }
-    
-.navbar-menu a {
-      text-decoration: none;
-      color: white;
-    }
-
-.navbar-link {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      padding: 24px 12px;
-      border-radius: 0px;
-    }
-    
-.navbar-link a {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: 150%;
-      color: #FFFFFF;
-    }
-
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
-
-.hero-heading-right {
-  position: relative;
-  width: 100%; /* Responsive width */
-  height: auto;
-  min-height: 27vw; /* Consider using a responsive unit */
-  background: #ffffff;
-  border-radius: 0px;
-}
-.hero-background {
-  position: absolute;
-  width: 100%; /* Responsive width */
-  height: 100%; /* Consider using a responsive unit */
-  background: url(Pics/background.jpg);
-  background-size: cover;
-}
-
-.hero-heading-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10vw; /* Use viewport width for gap */
-  position: absolute;
-  width: 100%;
-  max-width: 1200px;
-  height: auto; /* Adjust height to be auto for flexibility */
-  left: 50%;
-  top: 8vw;
-  transform: translateX(-50%); /* Center horizontally */
-  border-radius: 0px;
-}
-
-.hero-heading-column a {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 1vw; /* Responsive gap */
-  width: 100%;
-  height: auto; /* Adjust height to auto */
-  border-radius: 0px;
-}
-
-.hero-heading {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 2.4rem; /* Responsive font size */
-  line-height: 1.5em;
-  color: #FFFFFF;
-}
-
-.hero-heading-column b {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0;
-  gap: 1vw; /* Responsive gap */
-  width: 100%;
-  max-width: 1200px;
-  height: auto; /* Adjust height to auto */
-  border-radius: 0px;
-}
-
-.hero-heading-content {
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 2rem; /* Responsive font size */
-  line-height: 1.5em;
-  color: #ffffff;
-}
-
-
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
-
-/* Understanding the urgency section */
-.hero-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-top: 4vw;
-  padding-bottom: 4vw;
-  width: 100%;
-  min-height: 40vh;
-  background: #ffffff;
-  gap: 2vw; /* Use viewport width for gap */
-}
-
-/* Column */
-.hero-container-column {
-  display: flex;
-  flex-direction: column;
-  padding-left: 10vw; /* Adjust for responsive padding */
-  align-items: flex-start;
-  gap: 2vw; /* Responsive gap */
-  width: 50%;
-}
-
-/* Content */
-.hero-container-content {
-  flex-direction: column;
-  align-items: center;
-  gap: 1.5em; /* Adjust gap to a more reasonable unit */
-}
-
-/* Actions */
-.hero-container-actions {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1vw 0; /* Responsive padding */
-  gap: 1vw; /* Responsive gap */
-}
-
-.hero-container-actions a {
-  text-decoration: none;
-  color: white;
-}
-
-/* Button */
-.smog{
-  appearance: button;
-  background-color: #41B883; /* Black background */
-  border: 1px solid #41B883; /* Black border */
-  border-radius: 4px; /* Adjusted border-radius */
-  box-shadow: #FFFFFF 4px 4px 0 0, #4CAF50 4px 4px 0 1px; /* Box shadow styling */
-  box-sizing: border-box;
-  color: #D8D8D8; /* White text color */
-  cursor: pointer;
-  display: inline-block; /* Use inline-block for button layout */
-  font-family: 'Poppins', sans-serif; /* Font styling */
-  font-size: 14px; /* Font size */
-  font-weight: 400; /* Font weight */
-  line-height: 20px; /* Line height */
-  margin: 0 5px 10px 0; /* Margins */
-  padding: 12px 40px; /* Padding */
-  text-align: center; /* Centered text */
-  user-select: none;
-  -webkit-user-select: none;
-  vertical-align: middle;
-  white-space: nowrap;
-
-  /* Add touch-action and text-transform */
-  touch-action: manipulation;
-  text-transform: none;
-}
-
-.smog:not([disabled]):active {
-  transform: translate(2px, 2px); /* Translate on active */
-}
-
-
-.hero-container-image {
-  width: 30vw;
-  height: 20vw; /* Maintain aspect ratio */
-  background: url('Pics/Manila.jpg');
-  background-size: cover;
-  border-radius: 25%;
-}
-
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
-
-/* Team Circles */
-
-/* Auto layout */
-.team-circles-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 3vw; /* Adjusted gap */
-  position: relative;
-  padding-top: 2vw;
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  background: #4CAF50;
-}
-.team-circles-columns {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2vw;  
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-}
-
-/* Title Section */
-.team-circles-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 0px;
-  gap: 16px;
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  border-radius: 0px;
-}
-
-/* Team section */
-.team-circles-section {
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 36px;
-  line-height: 120%;
-  text-align: center;
-  color: #D8D8D8;
-}
-
-/* Description */
-.team-circles-description {
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */;
-  margin: 1vw;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 150%;
-  text-align: center;
-  color: #D8D8D8;
-}
-
-/* Card */
-.team-circle-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 2vw;
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  border-radius: 0px;
-}
-
-/* Image Wrapper */
-.team-circle-image-wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: auto;
-  height: auto; /* Auto height */
-  border-radius: 0px;
-}
-
-/* Team Circle Image */
-.JCPIC{
-  background: url(Pics/JC.jpg);
-}
-
-.MiggzPIC {
-  background: url(Pics/Miggz.jpg);
-}
-
-.LapidPIC {
-  background: url(Pics/Lapid.jpg);
-}
-
-.daniellePIC {
-  background: url(Pics/danielle.jpg);
-}
-.sumangPIC {
-  background: url(Pics/sumang.jpg);
-}
-
-.JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 200px;
-  height: 200px;
-  background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
-}
-
-
-/* Content */
-.team-circle-content, .team-circle-info {
-  width: 100%;
-  text-align: center;
-}
-.team-member-name, .team-member-role {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.2vw; /* Adjust font size */
-  line-height: 150%;
-  font-style: normal;
-  line-height: 50%;
-  padding: 0.5vw 0; /* Add some vertical padding */
-  color: #D8D8D8;
-}
-
-/* Team Member Role */
-.team-member-role {
-  width: 100%; /* Full width */
-  height: auto; /* Auto height */
-  padding-top: 1vw;
-  font-family: 'Poppins, sans-serif';
-  font-weight: 400;
-  font-size: 1.2em;
-  text-align: center;
-}
-
-
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
-
-/* Footer */
-.footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%; /* Full width */  
-  padding-top: 4.44vw;
-  min-height: auto; /* Height adjusts automatically */
-  background: #4CAF50;
-}
-
-/* Main Content Wrapper */
-.footermain-content-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  height: auto; /* Height adjusts automatically */
-  background: #4CAF50;
-}
-/* Columns */
-.footercolumns {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-  flex: 1;
-  gap: 1.38vw; /* Reduce the gap using viewport width */
-  width: 66.66%; /* Adjusted width */
-  height: auto; /* Height adjusts automatically */
-  padding: 2vw; /* Add horizontal padding */
-}
-/* Column */
-.footercolumn {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 25.22%; /* Adjusted width */
-  height: auto; /* Height adjusts automatically */
-  gap: 1em;
-  padding: 1vw; /* Add padding */
-  font-size: 1.2vw; /* Responsive font size */
-}
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  width: 25.22%; /* Adjusted width */
-  height: auto; /* Height adjusts automatically */
-  max-height: 320px;
-}
-
-/* Logo Wrapper */
-.footerlogo-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 1.11vw 0 0; /* Adjusted padding */
-  width: 22.01vw; /* Adjusted width */
-  height: auto; /* Height adjusts automatically */
-  max-height: 320px;
-}
-
-/* Logo */
-.footerlogo { 
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 0px;
-  width: 15vw; /* Responsive width */
-  height: 15vw;
-  background: url(Pics/Metro.png);
-  background-size: cover;
-}
-.footercolumn h2 {
+.navbar-brand {
   font-weight: 500;
-  font-size: 2em;
-  line-height: 120%;
-  color: #D8D8D8;
+  color: green;
+  font-size: 24px;
+  transition: 0.3s color;     
 }
-.footerabout, .footerarea
-{
-  text-decoration: none;  /* Remove underline */
-  color: #D8D8D8;
+
+.navbar-toggler {
+  border: none;
+  font-size: 1.25rem;
 }
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
 
-/* Features List For 2nd page*/
+.navbar-toggler:focus, .btn-close:focus {
+  box-shadow: none;
+  outline: none;
+}
 
-/* Container for the AQMS section */
-.aqms-container {
-  position: relative; /* Add this line */
-  display: flex;
-  padding: 25px;
-  box-sizing: border-box;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 3vw;
-  background: #FFFFFF;
+.nav-link {
+  color: green;
+  font-weight: 500;
+  position: relative;
+}
+
+.nav-link:hover, .nav-link.active {
+  color: black;
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 2px;
+  background-color: green;
+  visibility: hidden;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-link:hover::before, .nav-link.active::before{
   width: 100%;
-  height: auto; 
-  padding-top: 3vw;
-  padding-bottom: 3vw;
-}
-/* Title style unique to AQMS */
-.aqms-title {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
-  font-size: 2.5vw;
-  line-height: 120%;
-  text-align: center;
-  color: #000000;
-  width: 100%;
-  margin-bottom: 2%;
+  visibility: visible;
 }
 
-/* Main content style */
-.aqms-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 2vw;
-  width: 100%;
-  height: auto;
-}
-
-/* Description style unique to AQMS */
-.aqms-description {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1.5vw;
-  line-height: 150%;
-  text-align: justify;
-  color: #000000;
-  width: 100%;
-}
-.aqms-description p{
-  margin-bottom: 1%;
-}
-
-/* Features container */
-.aqms-features {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2vw;
-  width: 100%;
-  justify-content: space-evenly;
-}
-
-/* Individual feature item */
-.aqms-feature-item {
-  display: flex;
-  flex-direction: row ;
-  align-items: center;
-  gap: 1vw;
-  width: 100%;
-}
-
-.aqms-feature-item p{ 
-  text-align: justify;
-}
-
-/* Feature image icon */
-.aqms-icon {
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 50%;
-  width: 5vw;
-  height: 5vw;
-  max-width: 10vw;
-  max-height: 10vw;
-}
-
-/* Feature description */
-.aqms-feature-description {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 400;
-  font-size: 1vw;
-  line-height: 150%;
-  text-align: center;
-  color: #000000;
-  width: 100%;
-}
-
-/* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles *//* Reset some default styles */
-
-.progress-bar-container {
-  width: 100%;
-  background-color: white; /* White background */
-  border: 2px solid   #4f9b07; /* Light border for visibility */
-  border-radius: 5px;
-  overflow: hidden; /* Ensures the inner bar stays within the rounded corners */
-}
-
-.progress-bar {
-  height: 20px;
-  border-radius: 5px;
-  text-align: center;
-  line-height: 20px; /* Same as height */
-  color: white;
-}
-
-#smogRecommendation {
-  margin-top: 10px;
-  font-size: 1.1em;
-  color: #333; /* Or any color that matches your design */
-}
-
-#smogProgressBar.low { background-color: green; }
-#smogProgressBar.moderate { background-color: yellow; color: black; }
-#smogProgressBar.high { background-color: orange; }
-#smogProgressBar.very-high { background-color: red; }
-
-/* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px *//* Mobile Screens: max-width of 480px */
-/* Media Query for max-width: 480px */
-
-@media screen and (max-width: 480px) {
-    /* Navbar Adjustments for Mobile */
-    body, h1, p, h2 {
-      margin: 0;
-      padding: 0;
-      font-family: 'Poppins', sans-serif;
-      width: 100%; /* Full width */
-      font-style: normal;
-      color: #000000;
-      text-align: justify;
-    }
-      
-    /* H1 */
-    h1 {
-      font-weight: 700;
-      font-size: 1rem;
-      line-height: 120%;
-    }
-    
-    /* Paragraph */
-    p {
-      width: 100%; /* Full width */
-      font-weight: 400;
-      font-size: 0.8rem;
-      line-height: 150%;
-      color: #242424;
-    }
-
-  .navbar {
-    max-width: 100%;
-    height: 2vh;
-  }    
-  .navbar-container {
-      padding: 0 10px;
-  }
-  .navbar-content {
-      flex-grow: 0; /* Prevents logo from taking unnecessary space */
-      width: 100%; /* Responsive width */
-      gap: 1vw;
-  }
-  .navbar-logo {
-      gap: 1vw;
-  }
-
-  /* Show the mobile menu icon on mobile screens */
-  .mobile-menu-icon {
-    background-color: #41B883; /* Black background */
-    margin-left: auto; /* Aligns the button to the right */
-    font-size: 1em;
-    cursor: pointer;
-    display: block; /* Only show the button on mobile screens */
-    border-radius: 4px;
-    padding: 2%;
-    text-align: center;
-}
-  
-  .navbar-menu {
-      display: none; /* Hide the dropdown menu initially */
-      flex-direction: column;
-      height: auto;
-      background-color: #f9f9f9; /* Background color for dropdown */
-      text-align: left;
-      top: 5%;
-      position: absolute; /* Positioning relative to the navbar */
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Optional: adds a shadow for depth */
-      z-index: 1; /* Ensures dropdown appears above other content */
-      box-sizing: border-box;
-  }
-  
-  .navbar-menu a {
-      display: block;
-      padding: 10px;
-      color: black; /* Text color for visibility */
-      text-decoration: none;
-  }
-
-
-.hero-heading-right {
-    min-height: 50vw; /* Adjust for smaller screens */
-    border-radius: 8px; /* Soften edges */
-}
-
-.hero-background {
-    background-size: cover; /* Ensure full background visibility */
-    background-repeat: no-repeat;
-}
-
-.hero-heading-container {
-    flex-direction: column; /* Stack items vertically */
-    gap: 4vw; /* Reduce gap */
-    max-height: none; /* Remove max height restriction */
-    top: 10vw; /* Adjust top position */
-}
-
-.hero-heading-column a,
-.hero-heading-column b {
-    flex-direction: column; /* Stack items vertically */
-    gap: 2vw;
-}
-
-.hero-heading, .hero-heading-content {
-    font-size: 4vw; /* Adjust font size based on screen width */
-    text-align: center; /* Center-align text */
-}
-
-/* Adjustments for hero container and related elements */
-.hero-container {
-    flex-direction: column;
-    min-height: 100%; /* Adjust minimum height */
-    box-sizing: border-box;
-    padding: 3vw;
-}
-.hero-container-column {
-  max-height: 30vh;
-  width: 80%;
-  display: contents;
-}
-
-.hero-container-content{
-  max-height: 30vh;
-  display: contents;
-}
-
-.hero-container-column h1{
-  font-size: 1.5rem;
-  margin-top: 1%;
-  margin-bottom: 2%;
-}
-.hero-container-column p{
-  text-align: justify;  
-  font-size: 0.7em;
-}
-
-.hero-container-image {
-  display: none;
-   /*  max-width: 100%; Full width for images 
-    background-size: contain;
-    background-repeat: no-repeat;
-    border-radius: 0%;*/
-}
-.smog{
-  width: 40vw;
-  font-size: 0.6em; /* Dynamic font size based on screen width */
-  padding: 1vw 2vw; /* Use viewport width for padding */
-  margin-top: 1vw;
-}
-
-.team-circles-container{
-  padding-bottom: 5vw;
-}
-.team-circles-title h2{
-  font-size: 2rem;
-}
-.team-circles-description{
-  max-width: 75vw;
-  font-size: 1rem;
-}
-
-.team-circles-columns {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 20px; /* Adjust the gap between the team circle cards */
-}
-
-.team-circle-card {
-  flex: 1 0 45%; /* Adjust the width of the team circle cards */
-  max-width: 100vw; /* Limit the maximum width of each card */
-}
-/* Additional styles to center the team circle info */
-.team-circle-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-}
-.team-circle-image-wrapper {
-    width: 25vw; /* Scale based on viewport width */
-    height: 25vw; /* Maintain aspect ratio */
-    max-width: 120px; /* Limit maximum size */
-    max-height: 120px; /* Limit maximum size */
-}
-.JCPIC, .MiggzPIC, .LapidPIC, .daniellePIC, .sumangPIC {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 15vw;
-  height: 15vw;
+.hero-section {
+  background: url(pics/background.jpg) no-repeat center;
   background-size: cover;
-  border-radius: 50%; /* Set the border-radius to 50% for a round image */
-}
-.team-member-name, .team-member-role {
-    font-size: 1em; /* Adjust font size for better readability */
-    text-align: center;
+  width: 100%;
+  text-align: center;
 }
 
-/* Footer Adjustments */
-.footer{
-  max-width: 100vw;
-  height: 30vw;
+.hero-section::before{
+  background-color: rgba(0, 0, 0, 0.6);
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
-.footercolumns, .footer-links, .footercolumn {
-    gap: 4vw; /* Adjust gap for better spacing */
-    font-size: 2vw;
-}
-.footermain-content-wrapper{
-  max-height: 25vw;
+.hero-section, .container {
+  height: 100vh;
+  z-index: 1;
+  position: relative;
 }
 
-.footerlogo-wrapper, .footerlogo {
-    width: 25w; /* Adjust width to fit smaller screens */
-    max-width: 100vw;
-    background-size: cover;
-}
-/* Progress Bar Adjustments */
-.progress-bar-container, #smogRecommendation {
-    margin: 5px 0; /* Adjust margin for spacing */
-}
-.progress-bar {
-    height: 4vw; /* Adjust height for consistency */
+.btn {
+  background-color: beige;
+  color: green;
+  width: 50%;
+  font-weight: 750;    
 }
 
-.aqms-title {
-  font-size: 6vw;
-  margin-bottom: 20px;
-}
-.aqms-description p{
-  font-size: 4vw;
-  margin-bottom: 20px;
-}
-.aqms-feature-description {
-  font-size: 4vw;
-  margin-bottom: 20px;
+.hero-section .btn {
+  font-size: 50%;
 }
 
-.aqms-content {
-  flex-direction: column;
+.hero-section h2{
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
+.main-content {
   align-items: center;
+  display: flex;
+  background-color: whitesmoke;
 }
 
-.aqms-features {
-  flex-direction: column;
-  align-items: center;
-}
-.aqms-feature-item{
-  flex-direction: column;
+.main-content .btn{
+  font-size: 25px;
 }
 
-.aqms-icon {
-  width: 20vw;
-  height: 20vw;
-  max-width: none;
-  max-height: none;
-  margin-bottom: 20px;
+.manila {
+  background: url(Pics/Manila.jpg) no-repeat center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  border-radius: 16px;
+  display: block;
 }
+.card-img-top{
+  border-radius: 50%;
+  height: 250px !important;
+  width: 250px !important;
+  position: relative;
+  left: 80px;
+  top: -80px;
+  object-fit: cover;
+}
+.card{
+  border-radius: 0;
+  cursor: pointer;
+  margin-top: 100px !important;
+}
+.card:hover{
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 
+}
+.card-body{
+  margin-top: -50px;
+}
+.bi{
+  font-size: 25px;
+}
+@media only screen and (max-width: 480px) {
+  .manila {
+      display: none;
+  }
+
+  .nav-link::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 0;
+      height: 2px;
+      background-color: green;
+      visibility: hidden;
+      transition: 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::before, .nav-link.active::before{
+      width: 100%;
+      visibility: visible;
+  }
+  .main-content h1{
+      font-weight: bold;
+      font-size: 1.5rem;
+  }
+  
+  .main-content p{
+      font-size: medium;
+      font-weight: 500;
+      text-align: justify;
+  }
+  
+  .main-content .btn{
+      font-size: 100%;
+  }
+  .hidden{
+      display: none;
+  }
+  .card-img-top{
+      left: 48px !important;
+  }
 }
