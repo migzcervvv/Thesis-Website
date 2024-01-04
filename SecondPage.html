@@ -2,123 +2,117 @@
 <html lang="en">
 
 <head>
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Website.css">
+    <title>Monitoring</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="Website.css" rel="stylesheet">
 </head>
-<header class="navbar">
-    <div class="navbar-container">
-        <div class="navbar-content">
-            <div class="navbar-logo">
-                <a href="index.html">
-                    <h1>MetroBreathe</h1>
-                </a>
-            </div>
-            <button class="mobile-menu-icon" id="mobile-menu-toggle">☰</button>
-            <nav class="navbar-menu" id="navbar-menu">
-                <a href="#team">About</a>
-                <a href="SecondPage.html">Monitoring</a>
-            </nav>
-        </div>
-    </div>
-</header>
 <body>
-
-
-    <div class="hero-heading-right">
-        <div class="hero-background"></div>
-        <div class="hero-heading-container">
-            <div class="hero-heading-column a">
-                <h1 class="hero-heading">Air Monitoring and Prediction</h1>
-            </div>
-            <div class="hero-heading-column b">
-                <p class="hero-heading-content">Here you can monitor the current air levels and see our smog predictions for specific areas of Metro Manila!</p>
-            </div>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand me-auto" href="index.html">MetroBreathe</a>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MetroBreathe</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2 active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="SecondPage.html">Monitoring</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">What is AQI?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link mx-lg-2" href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <button class="navbar-toggler pe-0" type="button" data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!--Navbar-->
+<!--  hero-section  -->
+  <section class ="hero-section">
+      <div class="container d-flex align-items-center justify-content-center fs-1 text-white flex-column">
+          <div class="row">
+            <h1 style="color: bisque">Monitoring and Prediction</h1>
+            <h2 style="color: bisque">Check the current air levels and our smog predictions for <strong class = "text-danger">(AREA NOT YET DECIDED)</strong></h2>
+          </div>
+          <a href="SecondPage.html" role="button" class="btn btn-outline-success">Check Current Air Levels!</a>
+      </div>
+  </section>
+
+<!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER--><!--FOOTER-->
+<footer class = "pt-5 pb-4" style="background-color: whitesmoke;">
+    <hr class="mb-4">
+
+    <div class="container-xxl text-center text-md-left">
+
+      <div class="row text-center text-md-left">
+
+        <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+          <h5 class = "navbar-brand me-auto">MetroBreathe</h5>
+          <p>MetroBreathe is a smart air pollution monitoring system and smog prediction model developed for Metro Manila. It aims to provide real-time air quality data and predict smog occurrences, 
+            aiding local authorities in effective air quality management and promoting public health and environmental sustainability.</p>
+        </div>
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class="text-uppercasemb-4 font-weight-bold text-success">About Us</h5>
+          <p>
+            <a href = "#team" class = "text-black" style="text-decoration: none;">
+              Our Team
+            </a>
+          </p>
+          <p>
+            <a href = "https://github.com/migzcervvv/Thesis-Website" class = "text-black" style="text-decoration: none;">
+              GitHub Repository
+            </a>
+          </p>
+        </div>
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+          <h5 class = "text-uppercase mb-4 font-weight-bold text-success">Useful Links</h5>
+          <p>
+            <a href = "#" class = "text-black" style="text-decoration: none;">
+              What is AQI?
+            </a>
+          </p>
+          <p>
+            <a href = "SecondPage.html" class = "text-black" style="text-decoration: none;">
+              Air Monitoring
+            </a>
+          </p>
+        </div>
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+          <a href = "#" style="text-decoration: none;"><h5 class = "text-uppercase mb-4 font-weight-bold text-success">Contact</h5></a>
+        </div>
+      </div>
+      <hr class="mb-4">
+      <div class="row align-items-center">
+        <div class="col-md-7 col-lg-8">
+          <p> <strong class ="text-warning">Disclaimer</strong>
+            This project is solely intended for academic purposes only.
+          </p>
+        </div>
+        </div>
+      </div>
     </div>
 
-        <section class="aqms-container">
-            <div class="aqms-content">
-                <div class="aqms-description">
-                    <h1 class="aqms-title">AIR QUALITY MONITORING SYSTEM:</h1>
-                    <p>AQMS can be used to monitor a wide range of air pollutants, including particulate matter (PM2.5) and Carbon Dioxide. Hence, enhancing air quality in urban environments, particularly in densely populated areas like Manila which is the Capital of the Philippines, is a critical challenge for public health and environmental sustainability.</p>
-                    <p>To overcome this problem, a comprehensive smart air pollution monitoring system and smog prediction model can be vital in enhancing air quality in areas of Manila specifically in Quiapo, España Boulevard, and Intramuros.</p>
-                </div>
-                <div class="aqms-features">
-                    <div class="aqms-feature-item">
-                        <div class="aqms-icon humidity" style="background-image: url('Pics/Humidity\ Logo.jpg');"></div>
-                        <p class="aqms-feature-description">The measure of how much water vapor is present in the air. It is expressed as a percentage of the maximum amount of water vapor that the air can hold at a given temperature. Too much humidity can make it difficult to breathe, and it can also lead to the growth of mold and mildew. Too little humidity can make the air feel dry and can irritate the skin and respiratory system.</p>
-                    </div>
-                    <div class="aqms-feature-item">
-                        <div class="aqms-icon co2" style="background-image: url('Pics/co2\ Logo.png');"></div>
-                        <p class="aqms-feature-description">Carbon dioxide (CO2) is a gas that is released into the atmosphere when we burn fossil fuels, such as coal, oil, and natural gas. It is also a byproduct of respiration. CO2 is a greenhouse gas, which means that it traps heat in the atmosphere. This is one of the main causes of climate change.</p>
-                    </div>
-                    <div class="aqms-feature-item">
-                        <div class="aqms-icon pm25" style="background-image: url('Pics/pm2.5\ logo.webp');"></div>
-                        <p class="aqms-feature-description">PM2.5, also known as fine particulate matter, is a type of air pollution that consists of tiny particles that are 2.5 micrometers in diameter or smaller. These particles are so small that they can be inhaled deep into the lungs, where they can cause a number of health problems.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="team-circles-container">        
-            <div class="column">
-                <h2>Air Quality Data</h2>
-                <div class="air-quality-data">
-                    <p>Temperature: <span id="temperature"></span></p>
-                    <p>Humidity: <span id="humidity"></span></p>
-                    <p>Particulate Matter (PM2.5): <span id="pm25"></span></p>
-                    <p>Carbon Dioxide: <span id="co2"></span></p>
-                </div>
-        
-                <h2>Smog Prediction</h2>
-                <div class="progress-bar-container">
-                    <div class="progress-bar" id="smogProgressBar"></div>
-                </div>
-                <div class="smog-prediction-data">
-                    <h2>Recommendation: </h2>
-                    <p><span id="recommendation"></span></p>
-                </div>
-            </div>
-        </section>
-      <!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER --><!-- FOOTER -->
-      <div class="footermain-content-wrapper">
-          
-        <!-- Logo Wrapper -->
-        <div class="footerlogo-wrapper">
-          <a href="index.html">
-            <div class="footerlogo">
-            </div></a>
-        </div>
+  </footer>
 
-        <!-- Columns -->
-        <div class="footercolumns">
-
-            <!-- Single Column -->
-            <div class="footercolumn">
-                <div class="footer-links">
-                    <a href="index.html#team" class="footerabout"><h2>Team</h2></a>
-                </div>
-            </div>
-
-            <!-- Single Column -->
-            <div class="footercolumn">
-                  <div class="footer-links">
-                      <a href="SecondPage.html" class="footerarea"><h2>Monitoring</h2></a>
-                </div>
-            </div>
-            <!-- Single Column -->
-            <div class="footercolumn">
-              <div class="footer-links">
-                  <a href="https://github.com/migzcervvv/Thesis-Website" class="footerarea" target="_blank">
-                      <h2>GitHub</h2>
-                  </a>
-              </div>
-          </div>            
-      </div> 
-
-    </div> 
-</div> <!-- End of Footer -->
-
-
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 <script src="AirQuality.js"></script>    
 </body>
 
