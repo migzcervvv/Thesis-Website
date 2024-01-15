@@ -96,12 +96,16 @@
 .btn {
   background-color: beige;
   color: green;
-  width: 50%;
   font-weight: 750;
 }
 
 .main-content .btn:hover {
   color: #121212;
+  transition: ease-in-out;
+}
+
+.main-content .btn {
+  font-size: 1.2em;
 }
 
 .hero-section .btn {
@@ -116,6 +120,8 @@
   padding-bottom: 2%;
 }
 
+/*Icons*/
+
 .material-symbols-outlined {
   font-size: 70px;
 }
@@ -124,10 +130,6 @@
   align-items: center;
   display: flex;
   background-color: whitesmoke;
-}
-
-.main-content .btn {
-  font-size: 25px;
 }
 
 .manila {
@@ -238,9 +240,41 @@
   width: 200px;
 }
 
+.info {
+  background-color: whitesmoke;
+}
+
+.fi {
+  font-size: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th,
+td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
 @media only screen and (max-width: 480px) {
   .manila {
     display: none;
+  }
+
+  td,
+  th {
+    font-size: medium;
   }
 
   .nav-link::before {
